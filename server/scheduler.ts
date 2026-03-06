@@ -220,28 +220,17 @@ async function runScheduledGeneration(): Promise<void> {
     const now = new Date();
     const lastRun = config.lastRunAt ? new Date(config.lastRunAt) : null;
     
-    // Calculate time between runs based on articles per day
-    // For 5 articles/day = every 4.8 hours = 17,280,000 ms
-    const hoursPerArticle = 24 / config.articlesPerDay;
-    const minTimeBetweenRuns = hoursPerArticle * 60 * 60 * 1000; // Convert to milliseconds
+    // 1 article per day: minimum 24 hours between runs
+    const minTimeBetweenRuns = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
     
-    // FORCE RUN: If no articles created today, always generate one
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    
-    const lastRunDate = lastRun ? new Date(lastRun) : null;
-    const lastRunWasToday = lastRunDate && lastRunDate >= today;
-    
-    // Only skip if we ran recently AND we ran today
-    if (lastRun && lastRunWasToday && (now.getTime() - lastRun.getTime()) < minTimeBetweenRuns) {
-      console.log(`[Scheduler] Not enough time since last run (${Math.round((now.getTime() - lastRun.getTime()) / 60000)} min ago), skipping`);
+    // Skip if we already ran within the last 24 hours
+    if (lastRun && (now.getTime() - lastRun.getTime()) < minTimeBetweenRuns) {
+      const hoursAgo = Math.round((now.getTime() - lastRun.getTime()) / (60 * 60 * 1000));
+      console.log(`[Scheduler] Article already posted ${hoursAgo}h ago, next post in ${24 - hoursAgo}h`);
       return;
     }
     
-    // If last run was NOT today, force generate regardless of time
-    if (!lastRunWasToday) {
-      console.log("[Scheduler] No articles generated today - forcing generation");
-    }
+    console.log("[Scheduler] 24 hours since last article - generating today's article");
 
     console.log("[Scheduler] Running scheduled content generation...");
     
@@ -279,7 +268,7 @@ export async function initializeScheduler(): Promise<void> {
       await db.insert(schedulerConfig).values({
         name: "content_generator",
         enabled: true,
-        articlesPerDay: 2,
+        articlesPerDay: 1,
         topics: JSON.stringify(CONTENT_TOPICS.map(t => t.category)),
       });
       console.log("[Scheduler] Created default scheduler configuration");
@@ -290,9 +279,9 @@ export async function initializeScheduler(): Promise<void> {
       clearInterval(schedulerInterval);
     }
     
-    // Check every 30 minutes for more responsive article generation
-    schedulerInterval = setInterval(runScheduledGeneration, 30 * 60 * 1000); // Every 30 minutes
-    console.log("[Scheduler] Scheduler initialized, checking every 30 minutes");
+    // Check once per hour - article only posts if 24h have passed since last one
+    schedulerInterval = setInterval(runScheduledGeneration, 60 * 60 * 1000); // Every 1 hour
+    console.log("[Scheduler] Scheduler initialized - 1 article per day, checking hourly");
 
     // Initialize email drip campaign
     try {
