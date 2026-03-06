@@ -53,7 +53,7 @@ export default function CrosswaterBuilder() {
         title="Crosswater Custom Home Builder | Sunriver Oregon"
         description="Build your luxury home at Crosswater, Sunriver's most exclusive private golf community. Kevin Rea, Central Oregon's premier custom home builder. 45+ years experience. Call 541-390-9848."
         keywords={["Crosswater builder", "Crosswater custom homes", "Sunriver luxury homes", "private golf community Oregon", "Crosswater real estate", "exclusive Oregon homes"]}
-        ogImage="/images/StN3qFqGILG2.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/StN3qFqGILG2_2ffef6c0.jpg"
         canonicalUrl="/crosswater-builder"
       />
       <Header />
@@ -62,7 +62,7 @@ export default function CrosswaterBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/StN3qFqGILG2.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/StN3qFqGILG2_2ffef6c0.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

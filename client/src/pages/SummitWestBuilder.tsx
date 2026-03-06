@@ -52,7 +52,7 @@ export default function SummitWestBuilder() {
         title="Summit West Custom Home Builder | Bend Oregon West Side"
         description="Build your modern custom home at Summit West on Bend's west side with Kevin Rea. Easy Mt. Bachelor access. 45+ years experience. Call 541-390-9848."
         keywords={["Summit West builder", "Summit West custom homes", "west Bend home builder", "modern homes Bend Oregon", "Mt Bachelor access homes", "Bend west side neighborhoods"]}
-        ogImage="/images/WkNH38aWPs08.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/WkNH38aWPs08_c7149daf.jpg"
         canonicalUrl="/summit-west-builder"
       />
       <Header />
@@ -61,7 +61,7 @@ export default function SummitWestBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/WkNH38aWPs08.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/WkNH38aWPs08_c7149daf.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

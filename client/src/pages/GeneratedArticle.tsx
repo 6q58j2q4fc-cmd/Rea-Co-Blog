@@ -67,7 +67,7 @@ export default function GeneratedArticle() {
         title={article.title}
         description={article.metaDescription || article.excerpt || ""}
         keywords={article.metaKeywords || ""}
-        ogImage={article.featuredImage || "/images/hero-main.jpg"}
+        ogImage={article.featuredImage || "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"}
         ogType="article"
         canonicalUrl={`/articles/${slug}`}
         articlePublishedTime={article.publishedAt ? new Date(article.publishedAt).toISOString() : undefined}
@@ -145,7 +145,7 @@ export default function GeneratedArticle() {
                 url={typeof window !== "undefined" ? window.location.href : `https://reacohomes.com/articles/${slug}`}
                 title={article.title}
                 description={article.excerpt || ""}
-                image={article.featuredImage || "/images/hero-main.jpg"}
+                image={article.featuredImage || "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"}
               />
               <Button
                 variant="outline"
@@ -265,7 +265,7 @@ export default function GeneratedArticle() {
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
                     <img
-                      src="/images/kevin-rea.webp"
+                      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_d8906d02.webp"
                       alt="Kevin Rea"
                       className="w-16 h-16 rounded-full object-cover"
                     />

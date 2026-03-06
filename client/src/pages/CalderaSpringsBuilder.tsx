@@ -51,12 +51,12 @@ const calderaProjects = [
   {
     name: "Lakeside Retreat",
     description: "Modern mountain design with water views",
-    image: "/images/UCoE7gADVKD9.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/UCoE7gADVKD9_ee6116ea.jpg",
   },
   {
     name: "Forest Contemporary",
     description: "Open floor plan embracing natural surroundings",
-    image: "/images/qHKfAGVqL6Y8.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/qHKfAGVqL6Y8_1672100a.jpg",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function CalderaSpringsBuilder() {
         title="Caldera Springs Custom Home Builder"
         description="Build your luxury custom home at Caldera Springs in Sunriver with Kevin Rea. 45+ years experience. Family-friendly resort living. Call 541-390-9848."
         keywords={["Caldera Springs builder", "Caldera Springs custom homes", "Sunriver luxury homes", "Sunriver real estate", "Central Oregon vacation homes"]}
-        ogImage="/images/UCoE7gADVKD9.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/UCoE7gADVKD9_ee6116ea.jpg"
         canonicalUrl="/caldera-springs-builder"
       />
       <Header />
@@ -76,7 +76,7 @@ export default function CalderaSpringsBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/UCoE7gADVKD9.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/UCoE7gADVKD9_ee6116ea.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

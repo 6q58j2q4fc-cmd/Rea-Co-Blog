@@ -62,7 +62,7 @@ For those considering building a custom home in Central Oregon, now is an excell
     date: "2026-01-10",
     category: "Market Trends",
     source: "Bend Bulletin",
-    image: "/images/hero-neighborhoods.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg",
     tags: ["Bend Oregon", "Luxury Homes", "Market Trends"],
   },
   {
@@ -127,7 +127,7 @@ As building codes continue to evolve and client expectations increase, sustainab
     date: "2026-01-08",
     category: "Industry News",
     source: "Oregon Home Magazine",
-    image: "/images/hero-main.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg",
     tags: ["Sustainable Building", "Green Homes", "Central Oregon"],
   },
   {
@@ -192,7 +192,7 @@ Interested buyers should act quickly, as premium homesites at Brasada Ranch typi
     date: "2026-01-05",
     category: "Development News",
     source: "Central Oregon Daily",
-    image: "/images/oov3bdfkfk6B.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oov3bdfkfk6B_35418da9.jpg",
     tags: ["Brasada Ranch", "New Development", "Powell Butte"],
   },
   {
@@ -268,7 +268,7 @@ The best indoor-outdoor designs in Central Oregon draw inspiration from:
     date: "2026-01-03",
     category: "Design Trends",
     source: "Architectural Digest",
-    image: "/images/hero-portfolio.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg",
     tags: ["Home Design", "Indoor-Outdoor", "Architecture"],
   },
   {
@@ -342,7 +342,7 @@ For those interested in building at Tetherow, the process typically begins with:
     date: "2025-12-28",
     category: "Market Trends",
     source: "Bend Source",
-    image: "/images/qHKfAGVqL6Y8.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/qHKfAGVqL6Y8_1672100a.jpg",
     tags: ["Tetherow", "Golf Community", "Home Sales"],
   },
   {
@@ -426,7 +426,7 @@ New residents are contributing to the community:
     date: "2025-12-22",
     category: "Lifestyle",
     source: "Forbes",
-    image: "/images/cascade-mountains.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/cascade-mountains_79519e5f.jpg",
     tags: ["Remote Work", "Lifestyle", "Central Oregon"],
   },
 ];

@@ -52,7 +52,7 @@ export default function ShevlinCommonsBuilder() {
         title="Shevlin Commons Custom Home Builder | Bend Oregon"
         description="Build your dream home at Shevlin Commons, Bend's walkable west-side community adjacent to Shevlin Park. Kevin Rea, 45+ years experience. Call 541-390-9848."
         keywords={["Shevlin Commons builder", "Shevlin Commons custom homes", "west Bend home builder", "Shevlin Park homes", "walkable community Bend", "Bend Oregon neighborhoods"]}
-        ogImage="/images/oov3bdfkfk6B.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oov3bdfkfk6B_35418da9.jpg"
         canonicalUrl="/shevlin-commons-builder"
       />
       <Header />
@@ -61,7 +61,7 @@ export default function ShevlinCommonsBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/oov3bdfkfk6B.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oov3bdfkfk6B_35418da9.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

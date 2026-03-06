@@ -113,7 +113,7 @@ export default function SEOHead({
   title,
   description,
   keywords,
-  ogImage = "/images/hero-main.jpg",
+  ogImage = "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg",
   ogType = "website",
   canonicalUrl,
   articlePublishedTime,

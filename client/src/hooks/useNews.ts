@@ -34,7 +34,7 @@ const generateNewsArticles = (): NewsArticle[] => {
       date: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
       category: "Market Trends",
       source: "Bend Bulletin",
-      image: "/images/hero-neighborhoods.jpg",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg",
       tags: ["Bend Oregon", "Luxury Homes", "Market Trends"],
     },
     {
@@ -44,7 +44,7 @@ const generateNewsArticles = (): NewsArticle[] => {
       date: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
       category: "Industry News",
       source: "Oregon Home Magazine",
-      image: "/images/hero-main.jpg",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg",
       tags: ["Sustainable Building", "Green Homes", "Central Oregon"],
     },
     {
@@ -54,7 +54,7 @@ const generateNewsArticles = (): NewsArticle[] => {
       date: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
       category: "Development News",
       source: "Central Oregon Daily",
-      image: "/images/oov3bdfkfk6B.jpg",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oov3bdfkfk6B_35418da9.jpg",
       tags: ["Brasada Ranch", "New Development", "Powell Butte"],
     },
     {
@@ -64,7 +64,7 @@ const generateNewsArticles = (): NewsArticle[] => {
       date: new Date(Date.now() - 8 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
       category: "Design Trends",
       source: "Architectural Digest",
-      image: "/images/hero-portfolio.jpg",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg",
       tags: ["Home Design", "Indoor-Outdoor", "Architecture"],
     },
     {
@@ -74,7 +74,7 @@ const generateNewsArticles = (): NewsArticle[] => {
       date: new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
       category: "Market Trends",
       source: "Bend Source",
-      image: "/images/qHKfAGVqL6Y8.jpg",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/qHKfAGVqL6Y8_1672100a.jpg",
       tags: ["Tetherow", "Golf Community", "Home Sales"],
     },
     {
@@ -84,7 +84,7 @@ const generateNewsArticles = (): NewsArticle[] => {
       date: new Date(Date.now() - 20 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
       category: "Lifestyle",
       source: "Forbes",
-      image: "/images/cascade-mountains.jpg",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/cascade-mountains_79519e5f.jpg",
       tags: ["Remote Work", "Lifestyle", "Central Oregon"],
     },
     {
@@ -94,7 +94,7 @@ const generateNewsArticles = (): NewsArticle[] => {
       date: new Date(Date.now() - 25 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
       category: "Development News",
       source: "Golf Digest",
-      image: "/images/asoZsc8CLN0r.jpg",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/asoZsc8CLN0r_17a12646.jpg",
       tags: ["Pronghorn", "Golf", "Luxury Living"],
     },
     {
@@ -104,7 +104,7 @@ const generateNewsArticles = (): NewsArticle[] => {
       date: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
       category: "Industry News",
       source: "The Source Weekly",
-      image: "/images/WkNH38aWPs08.jpg",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/WkNH38aWPs08_c7149daf.jpg",
       tags: ["Home Show", "Innovation", "Custom Builders"],
     },
   ];

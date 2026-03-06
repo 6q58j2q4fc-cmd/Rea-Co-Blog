@@ -75,7 +75,7 @@ export default function Blog() {
         title="Rea Co Homes Blog - Custom Home Building Insights"
         description="Expert insights on custom home building in Central Oregon. Tips, trends, and community guides from master builder Kevin Rea."
         keywords={["custom home building blog", "Central Oregon home tips", "luxury home design ideas", "Bend Oregon builder insights", "home construction guide"]}
-        ogImage="/images/hero-main.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"
       />
       <Header />
 
@@ -83,7 +83,7 @@ export default function Blog() {
       <section className="relative h-[50vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-portfolio.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg')" }}
         >
           <div className="absolute inset-0 bg-timber/80" />
         </div>
@@ -291,7 +291,7 @@ export default function Blog() {
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-16 h-16 rounded-full bg-stone overflow-hidden">
                       <img
-                        src="/images/kevin-rea.webp"
+                        src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_d8906d02.webp"
                         alt="Kevin Rea"
                         className="w-full h-full object-cover"
                       />

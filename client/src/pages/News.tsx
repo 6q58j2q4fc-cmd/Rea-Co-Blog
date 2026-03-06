@@ -48,7 +48,7 @@ export default function News() {
       date: a.createdAt,
       category: a.category || 'Industry News',
       source: 'Rea Co Homes',
-      image: '/images/hero-main.jpg',
+      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg',
       tags: a.keywords?.split(',').slice(0, 3) || ['Central Oregon', 'Custom Homes'],
     }));
     return [...newsArticles, ...dbArticles];
@@ -84,7 +84,7 @@ export default function News() {
         title="Central Oregon Home Building News"
         description="Latest news and trends in Central Oregon luxury custom home building. Market updates, community developments, and industry insights."
         keywords={["custom homes Central Oregon", "luxury home builder Bend"]}
-        ogImage="/images/cascade-mountains.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/cascade-mountains_79519e5f.jpg"
       />
       <Header />
 
@@ -92,7 +92,7 @@ export default function News() {
       <section className="relative h-[50vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/cascade-mountains.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/cascade-mountains_79519e5f.jpg')" }}
         >
           <div className="absolute inset-0 bg-timber/80" />
         </div>

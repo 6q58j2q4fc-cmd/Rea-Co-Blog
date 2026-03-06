@@ -52,12 +52,12 @@ const brasadaProjects = [
   {
     name: "Rozewski Residence",
     description: "Modern mountain contemporary with panoramic Cascade views",
-    image: "/images/hero-neighborhoods.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg",
   },
   {
     name: "McCartney Family Home",
     description: "Rustic elegance meets modern luxury living",
-    image: "/images/chiaramonte-hero-exterior.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/chiaramonte-hero-exterior_d6a8fd30.webp",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function BrasadaRanchBuilder() {
         title="Brasada Ranch Custom Home Builder"
         description="Build your dream home at Brasada Ranch with Kevin Rea, Central Oregon's premier custom home builder. 45+ years experience. Call 541-390-9848."
         keywords={["Brasada Ranch builder", "Brasada Ranch custom homes", "Powell Butte home builder", "Central Oregon luxury homes", "Brasada Ranch real estate"]}
-        ogImage="/images/hero-neighborhoods.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg"
         canonicalUrl="/brasada-ranch-builder"
       />
       <Header />
@@ -90,7 +90,7 @@ export default function BrasadaRanchBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-neighborhoods.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

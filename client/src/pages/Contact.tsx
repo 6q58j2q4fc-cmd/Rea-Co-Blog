@@ -18,7 +18,7 @@ export default function Contact() {
         title="Contact Kevin Rea - Free Consultation"
         description="Contact Kevin Rea for a free custom home consultation. Call 541-390-9848 or email kevin@reacohomes.com. Building in Central Oregon since 1977."
         keywords={["contact custom home builder", "free home consultation Bend", "custom home quote Central Oregon", "home builder contact", "schedule consultation"]}
-        ogImage="/images/kevin-rea.webp"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_d8906d02.webp"
       />
       <Header />
 
@@ -26,7 +26,7 @@ export default function Contact() {
       <section className="relative h-[50vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/kevin-rea.webp')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_d8906d02.webp')" }}
         >
           <div className="absolute inset-0 bg-timber/80" />
         </div>

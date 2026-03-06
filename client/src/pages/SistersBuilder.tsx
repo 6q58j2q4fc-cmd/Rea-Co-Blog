@@ -63,7 +63,7 @@ export default function SistersBuilder() {
         title="Sisters Oregon Custom Home Builder"
         description="Build your custom home in Sisters, Oregon with Kevin Rea. 45+ years experience building luxury homes in Central Oregon's charming mountain town. Call 541-390-9848."
         keywords={["Sisters Oregon builder", "Sisters custom homes", "custom home builder Sisters", "luxury homes Sisters Oregon", "mountain homes Sisters"]}
-        ogImage="/images/hero-main.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"
         canonicalUrl="/sisters-builder"
       />
       <Header />
@@ -72,7 +72,7 @@ export default function SistersBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-main.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

@@ -52,12 +52,12 @@ const sunriverProjects = [
   {
     name: "Forest Retreat Estate",
     description: "Luxury living among the ponderosa pines",
-    image: "/images/StN3qFqGILG2.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/StN3qFqGILG2_2ffef6c0.jpg",
   },
   {
     name: "River View Custom Home",
     description: "Contemporary design with Deschutes River access",
-    image: "/images/UCoE7gADVKD9.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/UCoE7gADVKD9_ee6116ea.jpg",
   },
 ];
 
@@ -68,7 +68,7 @@ export default function SunriverBuilder() {
         title="Sunriver Custom Home Builder"
         description="Build your luxury custom home in Sunriver with Kevin Rea. 45+ years experience in Central Oregon's premier resort community. Call 541-390-9848."
         keywords={["Sunriver builder", "Sunriver custom homes", "Sunriver Oregon home builder", "luxury homes Sunriver", "Sunriver real estate"]}
-        ogImage="/images/StN3qFqGILG2.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/StN3qFqGILG2_2ffef6c0.jpg"
         canonicalUrl="/sunriver-builder"
       />
       <Header />
@@ -77,7 +77,7 @@ export default function SunriverBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/StN3qFqGILG2.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/StN3qFqGILG2_2ffef6c0.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

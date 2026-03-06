@@ -51,12 +51,12 @@ const brokenTopProjects = [
   {
     name: "Mountain Contemporary",
     description: "Clean lines with natural materials and mountain views",
-    image: "/images/WkNH38aWPs08.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/WkNH38aWPs08_c7149daf.jpg",
   },
   {
     name: "Craftsman Estate",
     description: "Timeless design with modern luxury amenities",
-    image: "/images/LlxE9731ghDy.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/LlxE9731ghDy_046e4f65.jpg",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function BrokenTopBuilder() {
         title="Broken Top Custom Home Builder"
         description="Build your luxury custom home at Broken Top with Kevin Rea. 45+ years experience in Bend's most prestigious golf community. Call 541-390-9848."
         keywords={["Broken Top builder", "Broken Top custom homes", "Bend Oregon luxury homes", "Broken Top real estate", "golf course homes Bend"]}
-        ogImage="/images/WkNH38aWPs08.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/WkNH38aWPs08_c7149daf.jpg"
         canonicalUrl="/broken-top-builder"
       />
       <Header />
@@ -76,7 +76,7 @@ export default function BrokenTopBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/WkNH38aWPs08.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/WkNH38aWPs08_c7149daf.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

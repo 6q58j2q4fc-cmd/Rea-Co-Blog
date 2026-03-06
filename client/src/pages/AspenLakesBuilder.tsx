@@ -54,7 +54,7 @@ export default function AspenLakesBuilder() {
         title="Aspen Lakes Custom Home Builder | Sisters Oregon"
         description="Build your dream home at Aspen Lakes Golf Course in Sisters, Oregon with Kevin Rea, Central Oregon's premier custom home builder. 45+ years experience. Call 541-390-9848."
         keywords={["Aspen Lakes builder", "Aspen Lakes custom homes", "Sisters Oregon home builder", "Central Oregon luxury homes", "Aspen Lakes real estate", "Three Sisters mountain homes"]}
-        ogImage="/images/cascade-mountains.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/cascade-mountains_79519e5f.jpg"
         canonicalUrl="/aspen-lakes-builder"
       />
       <Header />
@@ -63,7 +63,7 @@ export default function AspenLakesBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/cascade-mountains.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/cascade-mountains_79519e5f.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

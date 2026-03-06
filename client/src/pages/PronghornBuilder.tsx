@@ -51,12 +51,12 @@ const pronghornProjects = [
   {
     name: "Contemporary Desert Estate",
     description: "Modern luxury with panoramic golf course views",
-    image: "/images/asoZsc8CLN0r.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/asoZsc8CLN0r_17a12646.jpg",
   },
   {
     name: "Mountain View Retreat",
     description: "Timeless elegance overlooking the Cascades",
-    image: "/images/WkNH38aWPs08.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/WkNH38aWPs08_c7149daf.jpg",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function PronghornBuilder() {
         title="Pronghorn Custom Home Builder"
         description="Build your luxury custom home at Pronghorn Resort with Kevin Rea. 45+ years experience in Central Oregon's premier golf community. Call 541-390-9848."
         keywords={["Pronghorn builder", "Pronghorn custom homes", "Bend Oregon luxury homes", "Pronghorn Resort real estate", "golf course homes Bend"]}
-        ogImage="/images/asoZsc8CLN0r.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/asoZsc8CLN0r_17a12646.jpg"
         canonicalUrl="/pronghorn-builder"
       />
       <Header />
@@ -76,7 +76,7 @@ export default function PronghornBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/asoZsc8CLN0r.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/asoZsc8CLN0r_17a12646.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

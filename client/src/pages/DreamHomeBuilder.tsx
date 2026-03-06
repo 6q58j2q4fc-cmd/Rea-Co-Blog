@@ -76,11 +76,11 @@ const energyOptions = [
 
 // Animated home visualization styles
 const visualizationStyles = [
-  { sqft: 2000, style: "Cozy Modern", image: "/images/chiaramonte-hero-exterior.webp" },
-  { sqft: 3000, style: "Family Contemporary", image: "/images/mccartney-exterior-night.webp" },
-  { sqft: 4000, style: "Luxury Estate", image: "/images/underwood-hero-exterior.webp" },
-  { sqft: 5000, style: "Grand Showcase", image: "/images/1ststreet-hero-exterior.webp" },
-  { sqft: 6000, style: "Ultimate Custom", image: "/images/vonschlegell-hero-hallway.webp" },
+  { sqft: 2000, style: "Cozy Modern", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/chiaramonte-hero-exterior_d6a8fd30.webp" },
+  { sqft: 3000, style: "Family Contemporary", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/mccartney-exterior-night_309be8ac.webp" },
+  { sqft: 4000, style: "Luxury Estate", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/underwood-hero-exterior_582ea3ac.webp" },
+  { sqft: 5000, style: "Grand Showcase", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/1ststreet-hero-exterior_8d6e9035.webp" },
+  { sqft: 6000, style: "Ultimate Custom", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/vonschlegell-hero-hallway_1a493a06.webp" },
 ];
 
 export default function DreamHomeBuilder() {

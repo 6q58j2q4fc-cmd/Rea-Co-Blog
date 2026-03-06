@@ -52,7 +52,7 @@ export default function RiverRimBuilder() {
         title="River Rim Custom Home Builder | Bend Oregon Riverfront"
         description="Build your luxury riverfront home at River Rim on the Deschutes River in Bend, Oregon with Kevin Rea. 45+ years experience. Call 541-390-9848."
         keywords={["River Rim builder", "Deschutes River homes", "Bend riverfront property", "luxury riverfront homes Oregon", "River Rim real estate", "waterfront homes Bend"]}
-        ogImage="/images/hero-portfolio.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg"
         canonicalUrl="/river-rim-builder"
       />
       <Header />
@@ -61,7 +61,7 @@ export default function RiverRimBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-portfolio.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

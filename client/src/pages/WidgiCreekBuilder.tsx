@@ -53,7 +53,7 @@ export default function WidgiCreekBuilder() {
         title="Widgi Creek Custom Home Builder | Bend Oregon Golf Community"
         description="Build your dream home at Widgi Creek Golf Course in Bend, Oregon with Kevin Rea. Championship golf and mountain views. 45+ years experience. Call 541-390-9848."
         keywords={["Widgi Creek builder", "Widgi Creek custom homes", "Bend golf community homes", "south Bend home builder", "Widgi Creek real estate", "golf course homes Bend"]}
-        ogImage="/images/LlxE9731ghDy.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/LlxE9731ghDy_046e4f65.jpg"
         canonicalUrl="/widgi-creek-builder"
       />
       <Header />
@@ -62,7 +62,7 @@ export default function WidgiCreekBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/LlxE9731ghDy.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/LlxE9731ghDy_046e4f65.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

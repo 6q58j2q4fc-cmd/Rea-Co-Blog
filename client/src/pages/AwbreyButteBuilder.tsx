@@ -51,12 +51,12 @@ const awbreyProjects = [
   {
     name: "Contemporary Hillside Estate",
     description: "Modern design maximizing panoramic views",
-    image: "/images/hero-portfolio.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg",
   },
   {
     name: "Mountain View Retreat",
     description: "Timeless elegance with Cascade Mountain backdrop",
-    image: "/images/LlxE9731ghDy.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/LlxE9731ghDy_046e4f65.jpg",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function AwbreyButteBuilder() {
         title="Awbrey Butte Custom Home Builder"
         description="Build your luxury custom home on Awbrey Butte with Kevin Rea. 45+ years experience, panoramic views of Bend and the Cascades. Call 541-390-9848."
         keywords={["Awbrey Butte builder", "Awbrey Butte custom homes", "Bend Oregon home builder", "luxury homes Bend", "Awbrey Butte real estate"]}
-        ogImage="/images/hero-portfolio.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg"
         canonicalUrl="/awbrey-butte-builder"
       />
       <Header />
@@ -76,7 +76,7 @@ export default function AwbreyButteBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-portfolio.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

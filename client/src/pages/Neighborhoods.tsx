@@ -18,7 +18,7 @@ const neighborhoods = [
     name: "Brasada Ranch",
     location: "Powell Butte, Oregon",
     description: "A thriving, active, family-friendly community with world-class amenities and stunning high desert views.",
-    image: "/images/hero-neighborhoods.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg",
     features: ["Golf Course", "Spa & Fitness", "Equestrian"],
     icon: Mountain,
     website: "https://www.brasada.com",
@@ -28,7 +28,7 @@ const neighborhoods = [
     name: "Tetherow",
     location: "Bend, Oregon",
     description: "Modern luxury living with a championship golf course and panoramic Cascade Mountain views.",
-    image: "/images/qHKfAGVqL6Y8.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/qHKfAGVqL6Y8_1672100a.jpg",
     features: ["Golf Course", "Resort Amenities", "Mountain Views"],
     icon: Circle,
     website: "https://www.tetherow.com",
@@ -38,7 +38,7 @@ const neighborhoods = [
     name: "Pronghorn",
     location: "Bend, Oregon",
     description: "An exclusive resort community featuring two championship golf courses and luxury amenities.",
-    image: "/images/asoZsc8CLN0r.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/asoZsc8CLN0r_17a12646.jpg",
     features: ["Two Golf Courses", "Spa", "Fine Dining"],
     icon: Circle,
     website: "https://www.pronghornresort.com",
@@ -48,7 +48,7 @@ const neighborhoods = [
     name: "North Rim",
     location: "Bend, Oregon",
     description: "Elevated living on the rim with dramatic canyon views and modern architecture.",
-    image: "/images/WkNH38aWPs08.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/WkNH38aWPs08_c7149daf.jpg",
     features: ["Canyon Views", "Modern Design", "Privacy"],
     icon: Mountain,
     website: null,
@@ -58,7 +58,7 @@ const neighborhoods = [
     name: "Highlands at Broken Top",
     location: "Bend, Oregon",
     description: "Prestigious community with mature landscaping and proximity to Mt. Bachelor.",
-    image: "/images/LlxE9731ghDy.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/LlxE9731ghDy_046e4f65.jpg",
     features: ["Golf Access", "Mature Trees", "Mountain Access"],
     icon: Trees,
     website: "https://www.brokentop.com",
@@ -68,7 +68,7 @@ const neighborhoods = [
     name: "Tree Farm",
     location: "Bend, Oregon",
     description: "A newer community with large lots and a focus on outdoor living and natural beauty.",
-    image: "/images/UCoE7gADVKD9.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/UCoE7gADVKD9_ee6116ea.jpg",
     features: ["Large Lots", "Natural Setting", "Trails"],
     icon: Trees,
     website: null,
@@ -78,7 +78,7 @@ const neighborhoods = [
     name: "Northwest Crossing",
     location: "Bend, Oregon",
     description: "A walkable, new urbanist community with parks, shops, and restaurants.",
-    image: "/images/oov3bdfkfk6B.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oov3bdfkfk6B_35418da9.jpg",
     features: ["Walkable", "Parks", "Community Feel"],
     icon: Home,
     website: "https://www.northwestcrossing.com",
@@ -88,7 +88,7 @@ const neighborhoods = [
     name: "Awbrey Butte",
     location: "Bend, Oregon",
     description: "Established neighborhood with stunning views and proximity to downtown Bend.",
-    image: "/images/hero-portfolio.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg",
     features: ["City Views", "Established", "Central Location"],
     icon: Mountain,
     website: null,
@@ -98,7 +98,7 @@ const neighborhoods = [
     name: "Caldera Springs",
     location: "Sunriver, Oregon",
     description: "Resort living with access to Sunriver amenities and natural hot springs.",
-    image: "/images/cascade-mountains.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/cascade-mountains_79519e5f.jpg",
     features: ["Hot Springs", "Resort Access", "Nature"],
     icon: Mountain,
     website: "https://www.calderasprings.com",
@@ -108,7 +108,7 @@ const neighborhoods = [
     name: "Broken Top",
     location: "Bend, Oregon",
     description: "One of Bend's most prestigious golf communities with stunning architecture.",
-    image: "/images/hero-main.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg",
     features: ["Golf Course", "Prestigious", "Views"],
     icon: Circle,
     website: "https://www.brokentop.com",
@@ -118,7 +118,7 @@ const neighborhoods = [
     name: "Sunriver",
     location: "Sunriver, Oregon",
     description: "A world-renowned resort community with endless recreational opportunities.",
-    image: "/images/StN3qFqGILG2.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/StN3qFqGILG2_2ffef6c0.jpg",
     features: ["Resort Living", "Recreation", "Nature"],
     icon: Trees,
     website: "https://www.sunriverresort.com",
@@ -128,7 +128,7 @@ const neighborhoods = [
     name: "Black Butte Ranch",
     location: "Black Butte Ranch, Oregon",
     description: "A peaceful retreat with two golf courses and stunning mountain backdrop.",
-    image: "/images/XzcSzQzgCZoy.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/XzcSzQzgCZoy_13b0c1d0.jpg",
     features: ["Two Golf Courses", "Mountain Views", "Peaceful"],
     icon: Mountain,
     website: "https://www.blackbutteranch.com",
@@ -138,7 +138,7 @@ const neighborhoods = [
     name: "Aspen Lakes",
     location: "Sisters, Oregon",
     description: "A stunning golf community at the base of the Three Sisters mountains with pristine lakes and natural beauty.",
-    image: "/images/cascade-mountains.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/cascade-mountains_79519e5f.jpg",
     features: ["Golf Course", "Mountain Views", "Lakes"],
     icon: Mountain,
     website: "https://www.aspenlakes.com",
@@ -148,7 +148,7 @@ const neighborhoods = [
     name: "Crosswater",
     location: "Sunriver, Oregon",
     description: "An exclusive private golf community within Sunriver featuring a world-class Bob Cupp designed course.",
-    image: "/images/StN3qFqGILG2.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/StN3qFqGILG2_2ffef6c0.jpg",
     features: ["Private Golf", "Exclusive", "Nature"],
     icon: Circle,
     website: "https://www.crosswater.com",
@@ -158,7 +158,7 @@ const neighborhoods = [
     name: "Eagle Crest",
     location: "Redmond, Oregon",
     description: "A premier resort community with multiple golf courses, pools, and year-round recreation.",
-    image: "/images/hero-neighborhoods.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg",
     features: ["Resort Living", "Golf Courses", "Recreation"],
     icon: Mountain,
     website: "https://www.eagle-crest.com",
@@ -168,7 +168,7 @@ const neighborhoods = [
     name: "River Rim",
     location: "Bend, Oregon",
     description: "Exclusive riverfront homesites along the Deschutes River with direct water access and privacy.",
-    image: "/images/hero-portfolio.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg",
     features: ["Riverfront", "Privacy", "Water Access"],
     icon: Trees,
     website: null,
@@ -178,7 +178,7 @@ const neighborhoods = [
     name: "Shevlin Commons",
     location: "Bend, Oregon",
     description: "A walkable community adjacent to Shevlin Park with trails, shops, and a strong sense of community.",
-    image: "/images/oov3bdfkfk6B.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oov3bdfkfk6B_35418da9.jpg",
     features: ["Walkable", "Park Access", "Trails"],
     icon: Trees,
     website: null,
@@ -188,7 +188,7 @@ const neighborhoods = [
     name: "Summit West",
     location: "Bend, Oregon",
     description: "A newer west-side community with modern homes and convenient access to Mt. Bachelor and downtown.",
-    image: "/images/WkNH38aWPs08.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/WkNH38aWPs08_c7149daf.jpg",
     features: ["Modern Homes", "West Side", "Mountain Access"],
     icon: Home,
     website: null,
@@ -198,7 +198,7 @@ const neighborhoods = [
     name: "Widgi Creek",
     location: "Bend, Oregon",
     description: "A golf community featuring the Widgi Creek Golf Club with beautiful fairway and mountain views.",
-    image: "/images/asoZsc8CLN0r.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/asoZsc8CLN0r_17a12646.jpg",
     features: ["Golf Course", "Mountain Views", "Community"],
     icon: Circle,
     website: "https://www.widgicreek.com",
@@ -213,7 +213,7 @@ export default function Neighborhoods() {
         title="Central Oregon Neighborhoods"
         description="Build your custom home in Central Oregon's 19 finest communities: Brasada Ranch, Tetherow, Pronghorn, Broken Top, Awbrey Butte, Sunriver, Caldera Springs, and more."
         keywords={["custom homes Central Oregon", "luxury home builder Bend"]}
-        ogImage="/images/hero-neighborhoods.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg"
       />
       <Header />
 
@@ -221,7 +221,7 @@ export default function Neighborhoods() {
       <section className="relative h-[60vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-neighborhoods.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg')" }}
         >
           <div className="absolute inset-0 bg-timber/80" />
         </div>

@@ -1,0 +1,150 @@
+{
+  "query": "SELECT id, title, status, slug, publishedAt FROM articles ORDER BY publishedAt DESC LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user mexMZK3NDs3KsAz.c76371ba20f6 --database jH6DLQ8FrZGu3jgVut4Sqk --execute SELECT id, title, status, slug, publishedAt FROM articles ORDER BY publishedAt DESC LIMIT 20;",
+  "rows": [
+    {
+      "id": "2670001",
+      "title": "Your Dream Home Journey: The Custom Home Building Process with a Premier Custom Home Builder Bend",
+      "status": "published",
+      "slug": "your-dream-home-journey-the-custom-home-building-process-with-a-premier-custom-home-builder-bend-1772824518653",
+      "publishedAt": "2026-03-06 19:15:29"
+    },
+    {
+      "id": "2640001",
+      "title": "Unveiling the Future: 2026 Custom Home Trends Shaping Central Oregon Luxury",
+      "status": "published",
+      "slug": "unveiling-the-future-2026-custom-home-trends-shaping-central-oregon-luxury-1770822293027",
+      "publishedAt": "2026-02-11 15:06:31"
+    },
+    {
+      "id": "2610001",
+      "title": "Navigating the Bend Oregon Real Estate Market: Trends and Opportunities with Rea Co Homes",
+      "status": "published",
+      "slug": "navigating-the-bend-oregon-real-estate-market-trends-and-opportunities-with-rea-co-homes-1770803323012",
+      "publishedAt": "2026-02-11 09:50:09"
+    },
+    {
+      "id": "2580001",
+      "title": "Building a Greener Future: Sustainable Building in Oregon with Rea Co Homes",
+      "status": "published",
+      "slug": "building-a-greener-future-sustainable-building-in-oregon-with-rea-co-homes-1770786005811",
+      "publishedAt": "2026-02-11 05:00:46"
+    },
+    {
+      "id": "2550003",
+      "title": "Unveiling the 2026 Custom Home Trends: Modern Mountain Luxury in Central Oregon",
+      "status": "published",
+      "slug": "unveiling-the-2026-custom-home-trends-modern-mountain-luxury-in-central-oregon-1770768483131",
+      "publishedAt": "2026-02-11 00:09:37"
+    },
+    {
+      "id": "2550002",
+      "title": "Navigating the Bend Oregon Real Estate Market: Trends & Investment Opportunities",
+      "status": "published",
+      "slug": "navigating-the-bend-oregon-real-estate-market-trends-investment-opportunities-1770755855757",
+      "publishedAt": "2026-02-10 20:38:52"
+    },
+    {
+      "id": "2550001",
+      "title": "Unlocking Your Dream: The Art of Custom Home Design in Bend, Oregon",
+      "status": "published",
+      "slug": "unlocking-your-dream-the-art-of-custom-home-design-in-bend-oregon-1770737409393",
+      "publishedAt": "2026-02-10 15:31:41"
+    },
+    {
+      "id": "2520001",
+      "title": "How to Choose a Custom Home Builder: Your Guide to Building Excellence in Central Oregon",
+      "status": "published",
+      "slug": "how-to-choose-a-custom-home-builder-your-guide-to-building-excellence-in-central-oregon-1770719526481",
+      "publishedAt": "2026-02-10 10:33:34"
+    },
+    {
+      "id": "2490001",
+      "title": "Elevate Your Home: Expert Outdoor Living Design in Bend and Central Oregon",
+      "status": "published",
+      "slug": "elevate-your-home-expert-outdoor-living-design-in-bend-and-central-oregon-1770701470194",
+      "publishedAt": "2026-02-10 05:32:36"
+    },
+    {
+      "id": "2460001",
+      "title": "Finding Your Dream Foundation: Expert Lot Selection Tips for Custom Homes in Central Oregon",
+      "status": "published",
+      "slug": "finding-your-dream-foundation-expert-lot-selection-tips-for-custom-homes-in-central-oregon-1770682437583",
+      "publishedAt": "2026-02-10 00:15:08"
+    },
+    {
+      "id": "2430001",
+      "title": "Navigating the Bend Oregon Real Estate Market: Trends and Opportunities with Rea Co Homes",
+      "status": "published",
+      "slug": "navigating-the-bend-oregon-real-estate-market-trends-and-opportunities-with-rea-co-homes-1770669564388",
+      "publishedAt": "2026-02-09 20:41:07"
+    },
+    {
+      "id": "2400001",
+      "title": "Elevate Your Home: Expert Interior Design in Bend Oregon for Modern Rustic Living",
+      "status": "published",
+      "slug": "elevate-your-home-expert-interior-design-in-bend-oregon-for-modern-rustic-living-1770651220693",
+      "publishedAt": "2026-02-09 15:34:39"
+    },
+    {
+      "id": "2370001",
+      "title": "Unveiling the Ultimate Luxury Home Amenities in Central Oregon",
+      "status": "published",
+      "slug": "unveiling-the-ultimate-luxury-home-amenities-in-central-oregon-1770633216092",
+      "publishedAt": "2026-02-09 10:34:20"
+    },
+    {
+      "id": "2340001",
+      "title": "Mastering Interior Design in Bend Oregon: Crafting Your High Desert Dream Home",
+      "status": "published",
+      "slug": "mastering-interior-design-in-bend-oregon-crafting-your-high-desert-dream-home-1770614150319",
+      "publishedAt": "2026-02-09 05:16:15"
+    },
+    {
+      "id": "2310001",
+      "title": "Unlocking Your Dream: The Art of Custom Home Design in Bend Oregon with Rea Co Homes",
+      "status": "published",
+      "slug": "unlocking-your-dream-the-art-of-custom-home-design-in-bend-oregon-with-rea-co-homes-1770596007493",
+      "publishedAt": "2026-02-09 00:14:01"
+    },
+    {
+      "id": "2280001",
+      "title": "Elevate Your Lifestyle: The Art of Outdoor Living Design in Bend and Central Oregon",
+      "status": "published",
+      "slug": "elevate-your-lifestyle-the-art-of-outdoor-living-design-in-bend-and-central-oregon-1770582495533",
+      "publishedAt": "2026-02-08 20:28:46"
+    },
+    {
+      "id": "2250001",
+      "title": "Navigating the Bend Oregon Real Estate Market: Trends and Opportunities in Central Oregon",
+      "status": "published",
+      "slug": "navigating-the-bend-oregon-real-estate-market-trends-and-opportunities-in-central-oregon-1770565193696",
+      "publishedAt": "2026-02-08 15:41:13"
+    },
+    {
+      "id": "2220001",
+      "title": "Navigating the Bend Oregon Real Estate Market: Trends and Opportunities in Central Oregon",
+      "status": "published",
+      "slug": "navigating-the-bend-oregon-real-estate-market-trends-and-opportunities-in-central-oregon-1770547714808",
+      "publishedAt": "2026-02-08 10:50:01"
+    },
+    {
+      "id": "2190001",
+      "title": "How to Choose a Custom Home Builder in Central Oregon: Your Guide to Building Excellence",
+      "status": "published",
+      "slug": "how-to-choose-a-custom-home-builder-in-central-oregon-your-guide-to-building-excellence-1770529065025",
+      "publishedAt": "2026-02-08 05:38:42"
+    },
+    {
+      "id": "2160001",
+      "title": "Embrace the Dream: Your Guide to Central Oregon Living and High Desert Bliss",
+      "status": "published",
+      "slug": "embrace-the-dream-your-guide-to-central-oregon-living-and-high-desert-bliss-1770510289085",
+      "publishedAt": "2026-02-08 00:25:57"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttitle\tstatus\tslug\tpublishedAt\n2670001\tYour Dream Home Journey: The Custom Home Building Process with a Premier Custom Home Builder Bend\tpublished\tyour-dream-home-journey-the-custom-home-building-process-with-a-premier-custom-home-builder-bend-1772824518653\t2026-03-06 19:15:29\n2640001\tUnveiling the Future: 2026 Custom Home Trends Shaping Central Oregon Luxury\tpublished\tunveiling-the-future-2026-custom-home-trends-shaping-central-oregon-luxury-1770822293027\t2026-02-11 15:06:31\n2610001\tNavigating the Bend Oregon Real Estate Market: Trends and Opportunities with Rea Co Homes\tpublished\tnavigating-the-bend-oregon-real-estate-market-trends-and-opportunities-with-rea-co-homes-1770803323012\t2026-02-11 09:50:09\n2580001\tBuilding a Greener Future: Sustainable Building in Oregon with Rea Co Homes\tpublished\tbuilding-a-greener-future-sustainable-building-in-oregon-with-rea-co-homes-1770786005811\t2026-02-11 05:00:46\n2550003\tUnveiling the 2026 Custom Home Trends: Modern Mountain Luxury in Central Oregon\tpublished\tunveiling-the-2026-custom-home-trends-modern-mountain-luxury-in-central-oregon-1770768483131\t2026-02-11 00:09:37\n2550002\tNavigating the Bend Oregon Real Estate Market: Trends & Investment Opportunities\tpublished\tnavigating-the-bend-oregon-real-estate-market-trends-investment-opportunities-1770755855757\t2026-02-10 20:38:52\n2550001\tUnlocking Your Dream: The Art of Custom Home Design in Bend, Oregon\tpublished\tunlocking-your-dream-the-art-of-custom-home-design-in-bend-oregon-1770737409393\t2026-02-10 15:31:41\n2520001\tHow to Choose a Custom Home Builder: Your Guide to Building Excellence in Central Oregon\tpublished\thow-to-choose-a-custom-home-builder-your-guide-to-building-excellence-in-central-oregon-1770719526481\t2026-02-10 10:33:34\n2490001\tElevate Your Home: Expert Outdoor Living Design in Bend and Central Oregon\tpublished\televate-your-home-expert-outdoor-living-design-in-bend-and-central-oregon-1770701470194\t2026-02-10 05:32:36\n2460001\tFinding Your Dream Foundation: Expert Lot Selection Tips for Custom Homes in Central Oregon\tpublished\tfinding-your-dream-foundation-expert-lot-selection-tips-for-custom-homes-in-central-oregon-1770682437583\t2026-02-10 00:15:08\n2430001\tNavigating the Bend Oregon Real Estate Market: Trends and Opportunities with Rea Co Homes\tpublished\tnavigating-the-bend-oregon-real-estate-market-trends-and-opportunities-with-rea-co-homes-1770669564388\t2026-02-09 20:41:07\n2400001\tElevate Your Home: Expert Interior Design in Bend Oregon for Modern Rustic Living\tpublished\televate-your-home-expert-interior-design-in-bend-oregon-for-modern-rustic-living-1770651220693\t2026-02-09 15:34:39\n2370001\tUnveiling the Ultimate Luxury Home Amenities in Central Oregon\tpublished\tunveiling-the-ultimate-luxury-home-amenities-in-central-oregon-1770633216092\t2026-02-09 10:34:20\n2340001\tMastering Interior Design in Bend Oregon: Crafting Your High Desert Dream Home\tpublished\tmastering-interior-design-in-bend-oregon-crafting-your-high-desert-dream-home-1770614150319\t2026-02-09 05:16:15\n2310001\tUnlocking Your Dream: The Art of Custom Home Design in Bend Oregon with Rea Co Homes\tpublished\tunlocking-your-dream-the-art-of-custom-home-design-in-bend-oregon-with-rea-co-homes-1770596007493\t2026-02-09 00:14:01\n2280001\tElevate Your Lifestyle: The Art of Outdoor Living Design in Bend and Central Oregon\tpublished\televate-your-lifestyle-the-art-of-outdoor-living-design-in-bend-and-central-oregon-1770582495533\t2026-02-08 20:28:46\n2250001\tNavigating the Bend Oregon Real Estate Market: Trends and Opportunities in Central Oregon\tpublished\tnavigating-the-bend-oregon-real-estate-market-trends-and-opportunities-in-central-oregon-1770565193696\t2026-02-08 15:41:13\n2220001\tNavigating the Bend Oregon Real Estate Market: Trends and Opportunities in Central Oregon\tpublished\tnavigating-the-bend-oregon-real-estate-market-trends-and-opportunities-in-central-oregon-1770547714808\t2026-02-08 10:50:01\n2190001\tHow to Choose a Custom Home Builder in Central Oregon: Your Guide to Building Excellence\tpublished\thow-to-choose-a-custom-home-builder-in-central-oregon-your-guide-to-building-excellence-1770529065025\t2026-02-08 05:38:42\n2160001\tEmbrace the Dream: Your Guide to Central Oregon Living and High Desert Bliss\tpublished\tembrace-the-dream-your-guide-to-central-oregon-living-and-high-desert-bliss-1770510289085\t2026-02-08 00:25:57\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

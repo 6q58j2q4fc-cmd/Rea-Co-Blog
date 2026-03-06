@@ -357,7 +357,7 @@ export default function Resources() {
         title="Free Guides & Resources"
         description="Download free guides on custom home building in Central Oregon. Cost breakdowns, timelines, neighborhood guides, and more from Kevin Rea."
         keywords={["custom home building guide", "Bend Oregon home costs", "Central Oregon neighborhoods", "home building timeline", "custom home design"]}
-        ogImage="/images/hero-portfolio.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg"
         canonicalUrl="/resources"
       />
       <Header />

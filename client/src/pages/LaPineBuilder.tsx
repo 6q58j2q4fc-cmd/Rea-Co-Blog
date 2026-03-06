@@ -63,7 +63,7 @@ export default function LaPineBuilder() {
         title="La Pine Oregon Custom Home Builder"
         description="Build your custom home in La Pine, Oregon with Kevin Rea. 45+ years experience building luxury homes on forested acreage in South Deschutes County. Call 541-390-9848."
         keywords={["La Pine Oregon builder", "La Pine custom homes", "custom home builder La Pine", "South Deschutes County homes", "forest homes La Pine"]}
-        ogImage="/images/hero-main.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"
         canonicalUrl="/la-pine-builder"
       />
       <Header />
@@ -72,7 +72,7 @@ export default function LaPineBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-main.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

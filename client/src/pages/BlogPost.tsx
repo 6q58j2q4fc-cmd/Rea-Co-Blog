@@ -187,7 +187,7 @@ export default function BlogPost() {
                   <div className="flex items-start gap-6">
                     <div className="w-20 h-20 rounded-full bg-stone overflow-hidden flex-shrink-0">
                       <img
-                        src="/images/kevin-rea.webp"
+                        src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_d8906d02.webp"
                         alt="Kevin Rea"
                         className="w-full h-full object-cover"
                       />

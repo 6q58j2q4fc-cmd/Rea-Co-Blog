@@ -53,7 +53,7 @@ export default function EagleCrestBuilder() {
         title="Eagle Crest Custom Home Builder | Redmond Oregon"
         description="Build your dream home at Eagle Crest Resort in Redmond, Oregon with Kevin Rea, Central Oregon's premier custom home builder. 45+ years experience. Call 541-390-9848."
         keywords={["Eagle Crest builder", "Eagle Crest custom homes", "Redmond Oregon home builder", "Central Oregon resort homes", "Eagle Crest real estate", "golf community Redmond"]}
-        ogImage="/images/hero-neighborhoods.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg"
         canonicalUrl="/eagle-crest-builder"
       />
       <Header />
@@ -62,7 +62,7 @@ export default function EagleCrestBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-neighborhoods.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-neighborhoods_390b87d1.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

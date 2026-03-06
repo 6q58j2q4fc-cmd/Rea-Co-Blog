@@ -78,7 +78,7 @@ export default function RedmondBuilder() {
         title="Custom Home Builder Redmond Oregon"
         description="Build your custom home in Redmond Oregon with Kevin Rea. 45+ years experience, award-winning craftsmanship. Serving Eagle Crest and all Redmond neighborhoods. Call 541-390-9848."
         keywords={["custom home builder Redmond Oregon", "Redmond home construction", "Eagle Crest builder", "luxury homes Redmond", "new home builder Redmond"]}
-        ogImage="/images/hero-main.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"
         canonicalUrl="/redmond-builder"
       />
       <Header />
@@ -87,7 +87,7 @@ export default function RedmondBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-main.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>
@@ -308,7 +308,7 @@ export default function RedmondBuilder() {
 
             <div className="relative">
               <img
-                src="/images/kevin-rea.webp"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_d8906d02.webp"
                 alt="Kevin Rea - Custom Home Builder Redmond Oregon"
                 className="rounded-lg shadow-2xl"
               />

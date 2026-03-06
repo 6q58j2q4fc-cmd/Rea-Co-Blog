@@ -87,7 +87,7 @@ export default function About() {
         title="About Kevin Rea - Master Custom Home Builder"
         description="Meet Kevin Rea, Central Oregon's premier custom home builder since 1977. 45+ years experience, 100+ homes built, award-winning craftsmanship."
         keywords={["Kevin Rea builder", "custom home builder Bend Oregon", "master builder Central Oregon", "luxury home construction", "award-winning builder"]}
-        ogImage="/images/kevin-rea.webp"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_d8906d02.webp"
       />
       <Header />
 
@@ -95,7 +95,7 @@ export default function About() {
       <section className="relative h-[60vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-about.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-about_8ec601b7.jpg')" }}
         >
           <div className="absolute inset-0 bg-timber/80" />
         </div>
@@ -169,7 +169,7 @@ export default function About() {
 
             <div className="relative">
               <img
-               src="/images/kevin-rea.webp"
+               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_d8906d02.webp"
                 alt="Rea Co Homes Custom Home"
                 className="rounded-lg shadow-2xl"
               />

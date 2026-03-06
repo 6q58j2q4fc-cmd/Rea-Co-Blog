@@ -52,12 +52,12 @@ const tetherowProjects = [
   {
     name: "Contemporary Mountain Retreat",
     description: "Glass, steel, and stone harmonizing with the landscape",
-    image: "/images/qHKfAGVqL6Y8.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/qHKfAGVqL6Y8_1672100a.jpg",
   },
   {
     name: "Golf Course Estate",
     description: "Luxury living with panoramic fairway views",
-    image: "/images/asoZsc8CLN0r.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/asoZsc8CLN0r_17a12646.jpg",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function TetherowCustomHomes() {
         title="Tetherow Custom Home Builder"
         description="Build your luxury custom home at Tetherow with Kevin Rea, Bend's premier home builder. Modern mountain design, golf course living. Call 541-390-9848."
         keywords={["Tetherow builder", "Tetherow custom homes", "Bend Oregon home builder", "Tetherow real estate", "luxury homes Bend"]}
-        ogImage="/images/qHKfAGVqL6Y8.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/qHKfAGVqL6Y8_1672100a.jpg"
         canonicalUrl="/tetherow-custom-homes"
       />
       <Header />
@@ -85,7 +85,7 @@ export default function TetherowCustomHomes() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/qHKfAGVqL6Y8.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/qHKfAGVqL6Y8_1672100a.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

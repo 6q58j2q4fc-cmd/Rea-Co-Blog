@@ -54,7 +54,7 @@ export default function HighlandsBrokenTopBuilder() {
         title="The Highlands at Broken Top Custom Home Builder"
         description="Build your luxury custom home in The Highlands at Broken Top with Kevin Rea. 45+ years experience in Bend's most exclusive gated community. Call 541-390-9848."
         keywords={["Highlands Broken Top builder", "Highlands custom homes Bend", "gated community Bend builder", "luxury homes Broken Top", "exclusive Bend neighborhoods"]}
-        ogImage="/images/hero-main.jpg"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"
         canonicalUrl="/highlands-broken-top-builder"
       />
       <Header />
@@ -63,7 +63,7 @@ export default function HighlandsBrokenTopBuilder() {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-main.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>

@@ -563,3 +563,8 @@
 ## Print Stylesheet (Jan 28, 2026)
 - [x] Add print-friendly stylesheet for articles (added to index.css)
 - [x] Add print button to article pages (added to GeneratedArticle.tsx)
+
+## Blog Article Restoration (Mar 6, 2026)
+- [x] Investigate why articles are missing from database (live site server is 503 disabled - needs republish)
+- [x] Restore/seed missing articles to the database (100+ articles exist in dev DB, scheduler working)
+- [x] Fix and verify daily auto-publishing scheduler (running every 30 min, generates 2 articles/day)
