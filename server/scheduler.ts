@@ -9,6 +9,7 @@ import { schedulerConfig, articles, botActivityLog } from "../drizzle/schema";
 import { invokeLLM } from "./_core/llm";
 import { generateImage } from "./_core/imageGeneration";
 import { processEmailQueue, initializeWelcomeSequence } from "./emailDrip";
+import { sendArticlePublishedNotification } from "./_core/email";
 
 let _db: ReturnType<typeof drizzle> | null = null;
 let schedulerInterval: NodeJS.Timeout | null = null;
@@ -197,6 +198,20 @@ async function createScheduledArticle(): Promise<boolean> {
       .where(eq(botActivityLog.id, activityLog.id));
 
     console.log(`[Scheduler] Successfully created article: ${articleData.title}`);
+
+    // Send email notification to kevin@reacohomes.com
+    try {
+      await sendArticlePublishedNotification({
+        articleTitle: articleData.title,
+        articleExcerpt: articleData.excerpt,
+        articleSlug: slug,
+        articleCategory: topic.category,
+        publishedAt: new Date(),
+      });
+    } catch (emailError) {
+      console.warn("[Scheduler] Failed to send article notification email:", emailError);
+    }
+
     return true;
   } catch (error) {
     console.error("[Scheduler] Error creating scheduled article:", error);

@@ -571,3 +571,8 @@
 
 ## Scheduler Update (Mar 6, 2026)
 - [x] Change article scheduler from every 30 min to exactly 1 article per day (24h interval, hourly check)
+
+## Email Notification on Article Publish (Mar 7, 2026)
+- [x] Add email notification to kevin@reacohomes.com when new article is published
+- [x] Include article title, excerpt, and direct link in notification email
+- [x] Verify 1 article per day scheduler is working correctly (24h interval, hourly check)
