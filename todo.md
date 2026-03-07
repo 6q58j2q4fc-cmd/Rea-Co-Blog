@@ -576,3 +576,8 @@
 - [x] Add email notification to kevin@reacohomes.com when new article is published
 - [x] Include article title, excerpt, and direct link in notification email
 - [x] Verify 1 article per day scheduler is working correctly (24h interval, hourly check)
+
+## Manual Article Trigger & Email Test (Mar 7, 2026)
+- [x] Add admin endpoint to force immediate article generation (triggerManualGeneration)
+- [x] Trigger article generation - 2 articles published successfully
+- [ ] Email delivery pending: reacohomes.com domain verification required in Resend
