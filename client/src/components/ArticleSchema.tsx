@@ -26,12 +26,12 @@ export default function ArticleSchema({
   title,
   description,
   url,
-  image = "https://reacohomes.com/images/hero-main.jpg",
+  image = "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg",
   datePublished,
   dateModified,
   authorName = "Kevin Rea",
   publisherName = "Rea Co Homes",
-  publisherLogo = "https://reacohomes.com/logo.png",
+  publisherLogo = "https://bendoregonluxuryhomebuilder.com/logo.png",
   keywords = [],
   wordCount,
   category,
@@ -41,7 +41,7 @@ export default function ArticleSchema({
     const existingSchemas = document.querySelectorAll('[data-schema-type]');
     existingSchemas.forEach(el => el.remove());
 
-    const baseUrl = "https://reacohomes.com";
+    const baseUrl = "https://bendoregonluxuryhomebuilder.com";
 
     // Article Schema
     const articleSchema = {

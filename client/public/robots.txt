@@ -1,12 +1,13 @@
 # Robots.txt for Rea Co Homes - Custom Home Builder in Central Oregon
-# https://reacohomes.com
+# Canonical domain: https://bendoregonluxuryhomebuilder.com
 
 # Allow all search engine crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://reacohomes.com/sitemap.xml
+Sitemap: https://bendoregonluxuryhomebuilder.com/sitemap.xml
+Sitemap: https://bendoregonluxuryhomebuilder.com/rss.xml
 
 # Disallow admin and API routes
 Disallow: /api/
@@ -20,12 +21,16 @@ User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
+# Google News bot - allow all articles for news indexing
+User-agent: Googlebot-News
+Allow: /articles/
+Allow: /blog/
+Crawl-delay: 0
+
 # Google Images bot - allow all images
 User-agent: Googlebot-Image
-Allow: /images/
-Allow: /*.webp$
-Allow: /*.jpg$
-Allow: /*.png$
+Allow: /
+Crawl-delay: 0
 
 # Bing bot
 User-agent: Bingbot
@@ -67,4 +72,4 @@ User-agent: anthropic-ai
 Disallow: /
 
 # Host directive (canonical domain)
-Host: https://reacohomes.com
+Host: https://bendoregonluxuryhomebuilder.com

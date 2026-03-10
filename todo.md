@@ -581,3 +581,30 @@
 - [x] Add admin endpoint to force immediate article generation (triggerManualGeneration)
 - [x] Trigger article generation - 2 articles published successfully
 - [ ] Email delivery pending: reacohomes.com domain verification required in Resend
+
+## Maximum SEO Optimization (Mar 10, 2026)
+- [ ] Set bendoregonluxuryhomebuilder.com as canonical domain across all pages
+- [ ] Add Open Graph and Twitter Card meta tags to all pages
+- [ ] Add JSON-LD Article structured data to every blog article (for individual search listings)
+- [ ] Add JSON-LD LocalBusiness structured data to homepage
+- [ ] Add JSON-LD BreadcrumbList structured data to all pages
+- [ ] Generate dynamic XML sitemap including all article URLs
+- [ ] Add robots.txt with sitemap reference
+- [ ] Add per-article canonical <link> tags
+- [ ] Add meta robots noindex/nofollow controls
+- [ ] Ensure all article URLs are unique and crawlable
+
+## Maximum SEO Optimization - bendoregonluxuryhomebuilder.com (Mar 10, 2026)
+- [x] Set bendoregonluxuryhomebuilder.com as canonical domain in SEOHead component
+- [x] Set bendoregonluxuryhomebuilder.com as canonical domain in PageSEO component
+- [x] Set bendoregonluxuryhomebuilder.com as canonical domain in ArticleSchema component
+- [x] Update index.html with canonical link tag, full Open Graph, Twitter Card, WebSite schema
+- [x] Update robots.txt to point to bendoregonluxuryhomebuilder.com sitemap
+- [x] Add Googlebot-News directive to robots.txt for Google News indexing
+- [x] Update sitemap.ts to use bendoregonluxuryhomebuilder.com for all URLs
+- [x] Add all 30+ location pages to sitemap with correct priority/changefreq
+- [x] Add Google News publication tags to sitemap for recent articles
+- [x] Add WebSite schema with SearchAction (sitelinks search box) to index.html
+- [x] Reduce article keywords to 3-8 focused terms (removed 22 competitor keywords)
+- [x] Add max-image-preview:large, max-snippet:-1 robots directives
+- [x] Add geo meta tags (geo.region, geo.placename, geo.position, ICBM)

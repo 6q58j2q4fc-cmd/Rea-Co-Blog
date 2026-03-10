@@ -19,46 +19,24 @@ interface SEOHeadProps {
   articleTags?: string;
 }
 
-// Strategic competitor-adjacent keywords for organic traffic capture
+// Core brand keywords (kept minimal - 3 terms to avoid keyword stuffing)
 const competitorKeywords = [
-  // Location-based keywords (competitors target these)
   "custom home builder Bend Oregon",
-  "luxury homes Brasada Ranch",
-  "Tetherow custom home builder",
-  "Central Oregon home construction",
-  "high desert custom homes",
-  "Pronghorn luxury builder",
-  "Broken Top custom homes",
-  "Sunriver luxury home builder",
-  "Awbrey Butte home construction",
-  // Service-based keywords
-  "modern custom home builders Oregon",
-  "luxury home construction Central Oregon",
-  "mountain modern home builder",
-  "custom home design Bend",
-  "new construction Bend Oregon",
-  // Competitor-adjacent phrases (subtle, organic)
-  "best custom home builders Central Oregon",
-  "top rated home builders Bend",
-  "award winning home builder Oregon",
-  "premier luxury builder Bend",
-  "experienced home builder Central Oregon",
-  "trusted custom home contractor Bend",
-  "quality home construction Oregon",
-  "residential builder Deschutes County",
+  "Kevin Rea",
+  "Rea Co Homes",
 ];
 
 // Local Business structured data for Rea Co Homes
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "HomeBuilder",
-  "@id": "https://reacohomes.com/#organization",
+  "@id": "https://bendoregonluxuryhomebuilder.com/#organization",
   name: "Rea Co Homes",
   alternateName: "Kevin Rea Custom Homes",
   description: "Award-winning custom home builder in Central Oregon since 1977. Specializing in luxury homes in Brasada Ranch, Tetherow, Pronghorn, and Bend.",
-  url: "https://reacohomes.com",
-  logo: "https://reacohomes.com/images/rea-co-logo.png",
-  image: "https://reacohomes.com/images/hero-main.jpg",
+  url: "https://bendoregonluxuryhomebuilder.com",
+  logo: "https://bendoregonluxuryhomebuilder.com/images/rea-co-logo.png",
+  image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg",
   telephone: "+1-541-390-9848",
   email: "kevin@reacohomes.com",
   address: {
@@ -143,7 +121,7 @@ export default function SEOHead({
     updateOrCreateMeta("robots", "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "name");
 
     // ===== OPEN GRAPH TAGS =====
-    const fullTitle = title ? `${title} | Rea Co Homes` : "Rea Co Homes | Central Oregon Custom Home Builder";
+    const fullTitle = title ? `${title} | Rea Co Homes` : "Rea Co Homes | Bend Oregon Luxury Home Builder";
     const fullImageUrl = ogImage.startsWith("http") ? ogImage : `https://reacohomes.com${ogImage}`;
     
     updateOrCreateMeta("og:title", fullTitle, "property");
@@ -157,7 +135,7 @@ export default function SEOHead({
     updateOrCreateMeta("og:locale", "en_US", "property");
     
     if (canonicalUrl) {
-      updateOrCreateMeta("og:url", `https://reacohomes.com${canonicalUrl}`, "property");
+      updateOrCreateMeta("og:url", `https://bendoregonluxuryhomebuilder.com${canonicalUrl}`, "property");
     }
 
     // Article-specific Open Graph tags
@@ -203,7 +181,7 @@ export default function SEOHead({
         canonicalLink.setAttribute("rel", "canonical");
         document.head.appendChild(canonicalLink);
       }
-      canonicalLink.setAttribute("href", `https://reacohomes.com${canonicalUrl}`);
+      canonicalLink.setAttribute("href", `https://bendoregonluxuryhomebuilder.com${canonicalUrl}`);
     }
 
     // Add structured data
@@ -227,21 +205,21 @@ export default function SEOHead({
         author: {
           "@type": "Person",
           name: articleAuthor,
-          url: "https://reacohomes.com/about",
+          url: "https://bendoregonluxuryhomebuilder.com/about",
         },
         publisher: {
           "@type": "Organization",
           name: "Rea Co Homes",
           logo: {
             "@type": "ImageObject",
-            url: "https://reacohomes.com/images/rea-co-logo.png",
+            url: "https://bendoregonluxuryhomebuilder.com/logo.png",
           },
         },
         datePublished: articlePublishedTime,
         dateModified: articlePublishedTime,
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": canonicalUrl ? `https://reacohomes.com${canonicalUrl}` : undefined,
+          "@id": canonicalUrl ? `https://bendoregonluxuryhomebuilder.com${canonicalUrl}` : undefined,
         },
         articleSection: articleCategory,
         keywords: allKeywords,
@@ -271,7 +249,7 @@ export default function SEOHead({
 
     // Cleanup function to reset to defaults
     return () => {
-      document.title = "Central Oregon Custom Home Builder | Rea Co Homes | Kevin Rea";
+      document.title = "Bend Oregon Luxury Home Builder | Rea Co Homes | Kevin Rea";
     };
   }, [title, description, keywords, ogImage, ogType, canonicalUrl, articlePublishedTime, articleAuthor, articleCategory, articleTags]);
 

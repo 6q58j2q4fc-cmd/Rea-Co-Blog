@@ -20,7 +20,7 @@ interface PageSEOProps {
   structuredData?: object;
 }
 
-const BASE_URL = "https://reacohomes.com";
+const BASE_URL = "https://bendoregonluxuryhomebuilder.com";
 const DEFAULT_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/reaco-hero-portfolio_980a56c9.webp";
 const SITE_NAME = "Rea Co Homes - Custom Home Builder Central Oregon";
 const TWITTER_HANDLE = "@reacohomes";
