@@ -48,6 +48,20 @@ const STATIC_PAGES = [
   { path: "/sisters-builder", priority: 0.9, changefreq: "monthly", imageTitle: "Custom Home Builder Sisters Oregon" },
   { path: "/la-pine-builder", priority: 0.85, changefreq: "monthly", imageTitle: "Custom Home Builder La Pine Oregon" },
   { path: "/prineville-builder", priority: 0.85, changefreq: "monthly", imageTitle: "Custom Home Builder Prineville Oregon" },
+
+  // High-value SEO keyword landing pages
+  { path: "/luxury-home-builder-bend-oregon", priority: 0.95, changefreq: "monthly", imageTitle: "Luxury Home Builder Bend Oregon - Rea Co Homes" },
+  { path: "/home-builder-bend-oregon", priority: 0.95, changefreq: "monthly", imageTitle: "Home Builder Bend Oregon - Kevin Rea" },
+  { path: "/custom-home-builder-near-me", priority: 0.9, changefreq: "monthly", imageTitle: "Custom Home Builder Near Me - Central Oregon" },
+  { path: "/cost-to-build-custom-home-bend-oregon", priority: 0.9, changefreq: "monthly", imageTitle: "Cost to Build Custom Home Bend Oregon 2025" },
+  { path: "/services", priority: 0.9, changefreq: "monthly", imageTitle: "Custom Home Building Services - Rea Co Homes" },
+  { path: "/dream-home-builder", priority: 0.85, changefreq: "monthly", imageTitle: "Dream Home Builder Tool - Rea Co Homes" },
+  { path: "/inspiration", priority: 0.8, changefreq: "weekly", imageTitle: "Custom Home Design Inspiration - Central Oregon" },
+  { path: "/news", priority: 0.8, changefreq: "daily", imageTitle: "Central Oregon Home Building News" },
+  { path: "/river-rim-builder", priority: 0.85, changefreq: "monthly", imageTitle: "River Rim Custom Home Builder" },
+  { path: "/shevlin-commons-builder", priority: 0.85, changefreq: "monthly", imageTitle: "Shevlin Commons Custom Home Builder" },
+  { path: "/summit-west-builder", priority: 0.85, changefreq: "monthly", imageTitle: "Summit West Custom Home Builder" },
+  { path: "/widgi-creek-builder", priority: 0.85, changefreq: "monthly", imageTitle: "Widgi Creek Custom Home Builder" },
 ];
 
 function formatDate(date: Date): string {

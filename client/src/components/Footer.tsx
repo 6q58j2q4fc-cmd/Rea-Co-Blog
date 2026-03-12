@@ -14,11 +14,23 @@ import { toast } from "sonner";
 const quickLinks = [
   { href: "/portfolio", label: "Portfolio" },
   { href: "/neighborhoods", label: "Neighborhoods" },
+  { href: "/services", label: "Services" },
   { href: "/about", label: "About Kevin" },
   { href: "/resources", label: "Free Guides" },
+  { href: "/faq", label: "FAQ" },
   { href: "/news", label: "Industry News" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
+];
+
+// High-value SEO keyword pages
+const seoPages = [
+  { href: "/luxury-home-builder-bend-oregon", label: "Luxury Home Builder Bend" },
+  { href: "/home-builder-bend-oregon", label: "Home Builder Bend Oregon" },
+  { href: "/custom-home-builder-near-me", label: "Custom Home Builder Near Me" },
+  { href: "/cost-to-build-custom-home-bend-oregon", label: "Cost to Build" },
+  { href: "/compare-communities", label: "Compare Communities" },
+  { href: "/testimonials", label: "Testimonials" },
 ];
 
 // Neighborhood landing pages with dedicated SEO pages
@@ -62,7 +74,7 @@ export default function Footer() {
     <footer className="bg-timber text-white">
       {/* Main Footer */}
       <div className="container py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <h3 className="font-display text-2xl font-semibold mb-6">
@@ -146,6 +158,24 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link href={link.href}>
                     <span className="font-body text-white/80 hover:text-amber transition-colors">
+                      {link.label}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* SEO Landing Pages */}
+          <div className="hidden lg:block">
+            <h4 className="font-display text-lg font-semibold mb-6 text-amber">
+              More Resources
+            </h4>
+            <ul className="space-y-3">
+              {seoPages.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href}>
+                    <span className="font-body text-white/80 hover:text-amber transition-colors text-sm">
                       {link.label}
                     </span>
                   </Link>

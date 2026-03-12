@@ -54,6 +54,11 @@ import Resources from "./pages/Resources";
 import FAQ from "./pages/FAQ";
 import CompareCommunities from "./pages/CompareCommunities";
 import LocalBusinessSchema from "./components/LocalBusinessSchema";
+import LuxuryHomeBuilderBend from "./pages/LuxuryHomeBuilderBend";
+import BendOregonHomeBuilder from "./pages/BendOregonHomeBuilder";
+import CustomHomeBuilderNearMe from "./pages/CustomHomeBuilderNearMe";
+import CostToBuild from "./pages/CostToBuild";
+import Services from "./pages/Services";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -102,6 +107,12 @@ function Router() {
       <Route path="/faq" component={FAQ} />
       <Route path="/compare-communities" component={CompareCommunities} />
       <Route path="/admin" component={AdminDashboard} />
+      {/* High-value SEO keyword landing pages */}
+      <Route path="/luxury-home-builder-bend-oregon" component={LuxuryHomeBuilderBend} />
+      <Route path="/home-builder-bend-oregon" component={BendOregonHomeBuilder} />
+      <Route path="/custom-home-builder-near-me" component={CustomHomeBuilderNearMe} />
+      <Route path="/cost-to-build-custom-home-bend-oregon" component={CostToBuild} />
+      <Route path="/services" component={Services} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

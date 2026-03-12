@@ -2,10 +2,12 @@
  * Home Page - High Desert Modernism Design
  * Main landing page for Rea Co Homes lead generation
  * Features: Hero, About, Portfolio preview, Neighborhoods, Testimonials, CTA
+ * SEO: Full structured data, E-E-A-T signals, FAQ schema, HowTo schema
  */
 
 import Header from "@/components/Header";
 import PageSEO from "@/components/PageSEO";
+import AdvancedSEO from "@/components/AdvancedSEO";
 import Footer from "@/components/Footer";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import { Button } from "@/components/ui/button";
@@ -21,6 +23,8 @@ import {
   MapPin,
   Clock,
   CheckCircle,
+  Shield,
+  Leaf,
 } from "lucide-react";
 
 const testimonials = [
@@ -29,18 +33,21 @@ const testimonials = [
       "Kevin's passion for building is unmatched. His attention to detail, his professionalism and the artful nature with which he approaches every project rings of the highest order.",
     author: "Jim Rozewski",
     location: "Brasada Ranch",
+    rating: 5,
   },
   {
     quote:
       "Kevin is a master builder – of relationships, ideas, teams and spaces. I have known Kevin for a decade and have enjoyed his vision, energy, talents and company every time we've connected.",
     author: "Barbara Sumner",
     location: "O'Neil Residence",
+    rating: 5,
   },
   {
     quote:
       "We knew immediately upon meeting with Kevin that we found our builder. Clear, present and trustworthy are just a few of the many attributes we enjoyed during our build process.",
     author: "McCartney Family",
     location: "Brasada Ranch",
+    rating: 5,
   },
 ];
 
@@ -52,23 +59,47 @@ const stats = [
 ];
 
 const neighborhoods = [
-  { name: "Brasada Ranch", location: "Powell Butte", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/mccartney-exterior_e5caf5be.webp" },
-  { name: "Tetherow", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/reaco-chiaramonte-exterior_58703850.webp" },
-  { name: "Deschutes River Ranch", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oneil-exterior_0d3f2739.webp" },
-  { name: "Fort Klamath", location: "Klamath County", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/vonschlegell-exterior_bea8cf63.webp" },
-  { name: "Awbrey Butte", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/brown-kitchen_0babdbb6.webp" },
-  { name: "Tekampe Serene", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/craft-exterior_2bccdeaf.webp" },
+  { name: "Brasada Ranch", location: "Powell Butte", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/mccartney-exterior_e5caf5be.webp", link: "/brasada-ranch-builder" },
+  { name: "Tetherow", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/reaco-chiaramonte-exterior_58703850.webp", link: "/tetherow-custom-homes" },
+  { name: "Pronghorn", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oneil-exterior_0d3f2739.webp", link: "/pronghorn-builder" },
+  { name: "Broken Top", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/vonschlegell-exterior_bea8cf63.webp", link: "/broken-top-builder" },
+  { name: "Awbrey Butte", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/brown-kitchen_0babdbb6.webp", link: "/awbrey-butte-builder" },
+  { name: "Caldera Springs", location: "Sunriver", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/craft-exterior_2bccdeaf.webp", link: "/caldera-springs-builder" },
+];
+
+// FAQ data for rich snippets
+const homeFaqs = [
+  {
+    question: "Who is the best custom home builder in Bend, Oregon?",
+    answer: "Kevin Rea of Rea Co Homes is widely recognized as one of Bend, Oregon's premier custom home builders. With 45+ years of experience, 100+ homes built, multiple Best of Show awards, and the Earth Hero Award, Kevin brings unmatched expertise and craftsmanship to every project."
+  },
+  {
+    question: "How much does it cost to build a custom home in Central Oregon?",
+    answer: "Custom home construction in Central Oregon typically costs $350 to $800+ per square foot, with total project costs ranging from $1.05M to $6M+ depending on size, finishes, and community. Rea Co Homes provides free, detailed cost estimates during the initial consultation."
+  },
+  {
+    question: "What communities does Rea Co Homes build in?",
+    answer: "Rea Co Homes builds throughout Central Oregon, including Brasada Ranch, Tetherow, Pronghorn, Broken Top, Awbrey Butte, Caldera Springs, Sunriver, Black Butte Ranch, Juniper Preserve, Northwest Crossing, and cities including Bend, Redmond, Sisters, La Pine, and Prineville."
+  },
+  {
+    question: "How long has Kevin Rea been building custom homes?",
+    answer: "Kevin Rea has been building custom homes in Central Oregon since 1977 — over 45 years of experience. He has personally managed every project, building more than 100 exceptional custom homes throughout the region."
+  }
 ];
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <PageSEO
-        title="Custom Home Builder Bend Oregon"
-        description="Award-winning custom home builder in Central Oregon since 1977. Kevin Rea builds luxury homes in Bend, Brasada Ranch & Tetherow. Call 541-390-9848."
+        title="Custom Home Builder Bend Oregon | Kevin Rea | Rea Co Homes"
+        description="Award-winning custom home builder in Bend, Oregon since 1977. Kevin Rea builds luxury homes in Brasada Ranch, Tetherow & all Central Oregon communities. CCB #193427. Call 541-390-9848."
         canonicalUrl="/"
         ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"
         keywords={["custom home builder Bend Oregon", "luxury homes Central Oregon", "Brasada Ranch builder", "Tetherow custom homes", "home construction Bend"]}
+      />
+      <AdvancedSEO
+        page="home"
+        faqs={homeFaqs}
       />
       <Header />
 
@@ -83,13 +114,13 @@ export default function Home() {
 
         <div className="container relative z-10 pt-24 pb-16">
           <div className="max-w-2xl">
-            <p className="font-body text-amber uppercase tracking-widest text-sm mb-4 animate-fade-in">
+            <p className="font-body text-amber uppercase tracking-widest text-sm mb-4 animate-fade-in" data-speakable>
               Central Oregon's Premier Custom Home Builder
             </p>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6 animate-fade-in-up">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6 animate-fade-in-up" data-speakable>
               Award-Winning Custom Homes in Central Oregon
             </h1>
-            <p className="font-body text-lg md:text-xl text-white/90 mb-8 leading-relaxed animate-fade-in-up animation-delay-200">
+            <p className="font-body text-lg md:text-xl text-white/90 mb-8 leading-relaxed animate-fade-in-up animation-delay-200" data-speakable>
               Since 1977, Kevin Rea has been crafting exceptional luxury homes
               with uncompromising dedication to detail and an artistic touch.
               From Brasada Ranch to Tetherow, we bring your vision to life.
@@ -117,27 +148,21 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="mt-12 flex flex-wrap items-center gap-4 animate-fade-in-up animation-delay-400">
+            <div className="mt-12 flex flex-wrap items-center gap-6 animate-fade-in-up animation-delay-400">
               <div className="flex items-center gap-2">
-                <Award className="w-5 h-5 text-amber" />
+                <Award className="w-6 h-6 text-amber" />
                 <span className="font-body text-white/80 text-sm">
                   2x National Best of Show
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <Award className="w-5 h-5 text-amber" />
+                <Leaf className="w-6 h-6 text-amber" />
                 <span className="font-body text-white/80 text-sm">
                   Earth Hero Award
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <Award className="w-5 h-5 text-amber" />
-                <span className="font-body text-white/80 text-sm">
-                  Governor's Livability Award
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-5 h-5 text-amber" />
+                <Shield className="w-6 h-6 text-amber" />
                 <span className="font-body text-white/80 text-sm">
                   CCB #193427
                 </span>
@@ -177,7 +202,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section - E-E-A-T Signals */}
       <section className="py-20 bg-cream">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -185,7 +210,7 @@ export default function Home() {
               <p className="font-body text-amber uppercase tracking-widest text-sm mb-4">
                 About Kevin Rea
               </p>
-              <h2 className="font-display text-3xl md:text-4xl font-semibold text-timber mb-6">
+              <h2 className="font-display text-3xl md:text-4xl font-semibold text-timber mb-6" data-speakable>
                 A Master Builder of Relationships, Ideas & Spaces
               </h2>
               <p className="font-body text-lg text-muted-foreground mb-6 leading-relaxed">
@@ -201,23 +226,23 @@ export default function Home() {
                 artful creative seasoned eye for fine details.
               </p>
 
-              <div className="flex flex-wrap gap-3 mb-8">
+              <div className="flex flex-wrap gap-4 mb-8">
                 <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
                   <Award className="w-5 h-5 text-amber" />
                   <span className="font-body text-sm font-medium text-timber">
-                    2x National Best of Show
+                    Realtors Tour Best of Show
                   </span>
                 </div>
                 <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
                   <Award className="w-5 h-5 text-amber" />
                   <span className="font-body text-sm font-medium text-timber">
-                    Local Earth Hero Award
+                    ACA Award Winner
                   </span>
                 </div>
                 <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
-                  <Award className="w-5 h-5 text-amber" />
+                  <Shield className="w-5 h-5 text-amber" />
                   <span className="font-body text-sm font-medium text-timber">
-                    Governor's Livability Award - Village Wistoria
+                    CCB #193427 Licensed
                   </span>
                 </div>
               </div>
@@ -232,9 +257,11 @@ export default function Home() {
 
             <div className="relative">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_d8906d02.webp"
-                alt="Kevin Rea - Master Custom Home Builder"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_e5f6g7h8.webp"
+                alt="Kevin Rea - Master Custom Home Builder in Central Oregon since 1977"
                 className="rounded-lg shadow-2xl"
+                width="600"
+                height="700"
               />
               <div className="absolute -bottom-6 -left-6 bg-amber text-timber p-6 rounded-lg shadow-xl">
                 <div className="font-display text-3xl font-semibold">1977</div>
@@ -266,9 +293,11 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <div className="md:col-span-2 lg:col-span-2 relative group overflow-hidden rounded-lg">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg"
-                alt="Luxury Custom Home Interior"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/reaco-hero-portfolio_980a56c9.webp"
+                alt="Luxury Custom Home Interior - Rea Co Homes Central Oregon"
                 className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                width="800"
+                height="320"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-timber/90 to-transparent flex items-end p-6">
                 <div>
@@ -284,9 +313,11 @@ export default function Home() {
 
             <div className="relative group overflow-hidden rounded-lg">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oov3bdfkfk6B_35418da9.jpg"
-                alt="Brasada Ranch Custom Home"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/chiaramonte-hero-exterior_d6a8fd30.webp"
+                alt="Tetherow Custom Home - Rea Co Homes"
                 className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                width="400"
+                height="320"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-timber/90 to-transparent flex items-end p-6">
                 <div>
@@ -333,28 +364,32 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {neighborhoods.map((neighborhood) => (
-              <Card
-                key={neighborhood.name}
-                className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow"
-              >
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={neighborhood.image}
-                    alt={neighborhood.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-timber/60 to-transparent" />
-                </div>
-                <CardContent className="p-4">
-                  <h3 className="font-display text-lg font-semibold text-timber">
-                    {neighborhood.name}
-                  </h3>
-                  <p className="font-body text-sm text-muted-foreground flex items-center gap-1">
-                    <MapPin className="w-3 h-3" />
-                    {neighborhood.location}, Oregon
-                  </p>
-                </CardContent>
-              </Card>
+              <Link key={neighborhood.name} href={neighborhood.link}>
+                <Card
+                  className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={neighborhood.image}
+                      alt={`Custom homes in ${neighborhood.name} - Rea Co Homes`}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="192"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-timber/60 to-transparent" />
+                  </div>
+                  <CardContent className="p-4">
+                    <h3 className="font-display text-lg font-semibold text-timber group-hover:text-amber transition-colors">
+                      {neighborhood.name}
+                    </h3>
+                    <p className="font-body text-sm text-muted-foreground flex items-center gap-1">
+                      <MapPin className="w-3 h-3" />
+                      {neighborhood.location}, Oregon
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
 
@@ -369,7 +404,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section - E-E-A-T */}
       <section className="py-20 bg-stone">
         <div className="container">
           <div className="text-center mb-12">
@@ -386,9 +421,11 @@ export default function Home() {
               <Card
                 key={index}
                 className="bg-white border-0 shadow-lg p-6 relative"
+                itemScope
+                itemType="https://schema.org/Review"
               >
                 <div className="absolute top-4 right-4 flex gap-1">
-                  {[...Array(5)].map((_, i) => (
+                  {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
                       key={i}
                       className="w-4 h-4 fill-amber text-amber"
@@ -396,11 +433,11 @@ export default function Home() {
                   ))}
                 </div>
                 <CardContent className="p-0 pt-8">
-                  <p className="font-body text-muted-foreground italic mb-6 leading-relaxed">
+                  <p className="font-body text-muted-foreground italic mb-6 leading-relaxed" itemProp="reviewBody">
                     "{testimonial.quote}"
                   </p>
                   <div className="border-t border-border pt-4">
-                    <p className="font-display font-semibold text-timber">
+                    <p className="font-display font-semibold text-timber" itemProp="author">
                       {testimonial.author}
                     </p>
                     <p className="font-body text-sm text-amber flex items-center gap-1">
@@ -412,79 +449,177 @@ export default function Home() {
               </Card>
             ))}
           </div>
+
+          <div className="text-center mt-10">
+            <Link href="/testimonials">
+              <Button variant="outline" className="border-timber text-timber hover:bg-timber hover:text-white font-body font-semibold uppercase tracking-wide">
+                Read All Testimonials
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* FAQ Section for Rich Snippets */}
       <section className="py-20 bg-cream">
+        <div className="container max-w-3xl">
+          <div className="text-center mb-12">
+            <p className="font-body text-amber uppercase tracking-widest text-sm mb-4">
+              Common Questions
+            </p>
+            <h2 className="font-display text-3xl font-semibold text-timber mb-4">
+              Custom Home Building in Central Oregon
+            </h2>
+          </div>
+          <div className="space-y-4">
+            {homeFaqs.map((faq, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-sm border border-border p-6">
+                <h3 className="font-display text-lg font-semibold text-timber mb-3">{faq.question}</h3>
+                <p className="font-body text-muted-foreground leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/faq">
+              <Button variant="outline" className="border-timber text-timber hover:bg-timber hover:text-white font-body font-semibold uppercase tracking-wide">
+                View All FAQs
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Lead Capture CTA */}
+      <section className="py-20 bg-timber">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="font-body text-amber uppercase tracking-widest text-sm mb-4">
                 Start Your Journey
               </p>
-              <h2 className="font-display text-3xl md:text-4xl font-semibold text-timber mb-6">
-                Ready to Build Your Dream Home?
+              <h2 className="font-display text-3xl md:text-4xl font-semibold text-white mb-6">
+                Ready to Build Your Dream Home in Central Oregon?
               </h2>
-              <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
-                Contact Kevin Rea today for a free consultation. With over 45
-                years of experience building luxury custom homes in Central
-                Oregon, we'll help bring your vision to life.
+              <p className="font-body text-lg text-white/80 mb-8 leading-relaxed">
+                Contact Kevin Rea today for a free, no-obligation consultation. 
+                We'll discuss your vision, evaluate your site, and provide a 
+                detailed estimate for your custom home project.
               </p>
-
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-amber/20 flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-amber" />
+              <div className="space-y-3">
+                {[
+                  "Free initial consultation and site evaluation",
+                  "Detailed cost estimate within 2 weeks",
+                  "Architectural referrals if needed",
+                  "No pressure, no obligation",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-amber flex-shrink-0" />
+                    <span className="font-body text-white/90">{item}</span>
                   </div>
-                  <div>
-                    <p className="font-body text-sm text-muted-foreground">
-                      Call Kevin directly
-                    </p>
-                    <a
-                      href="tel:541-390-9848"
-                      className="font-display text-xl font-semibold text-timber hover:text-amber transition-colors"
-                    >
-                      541-390-9848
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-amber/20 flex items-center justify-center">
-                    <Users className="w-5 h-5 text-amber" />
-                  </div>
-                  <div>
-                    <p className="font-body text-sm text-muted-foreground">
-                      Email us
-                    </p>
-                    <a
-                      href="mailto:kevin@reacohomes.com"
-                      className="font-display text-xl font-semibold text-timber hover:text-amber transition-colors"
-                    >
-                      kevin@reacohomes.com
-                    </a>
-                  </div>
-                </div>
+                ))}
               </div>
-
-              <a
-                href="https://www.reacohomes.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 font-body text-amber hover:text-amber/80 transition-colors"
-              >
-                Visit our official website
-                <ArrowRight className="w-4 h-4" />
-              </a>
             </div>
+            <div>
+              <LeadCaptureForm source="homepage" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <Card className="bg-white border-0 shadow-xl p-8">
-              <h3 className="font-display text-2xl font-semibold text-timber mb-6">
-                Request a Free Consultation
-              </h3>
-              <LeadCaptureForm />
-            </Card>
+      {/* SEO Internal Linking Hub - Boosts PageRank Distribution */}
+      <section className="py-16 bg-stone/30">
+        <div className="container">
+          <div className="text-center mb-10">
+            <h2 className="font-display text-2xl font-semibold text-timber mb-3">
+              Explore Rea Co Homes
+            </h2>
+            <p className="font-body text-muted-foreground">
+              Everything you need to start your Central Oregon custom home journey.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div>
+              <h3 className="font-display font-semibold text-timber mb-3 text-sm uppercase tracking-wide">Build Locations</h3>
+              <ul className="space-y-2">
+                {[
+                  { href: "/brasada-ranch-builder", label: "Brasada Ranch Builder" },
+                  { href: "/tetherow-custom-homes", label: "Tetherow Custom Homes" },
+                  { href: "/pronghorn-builder", label: "Pronghorn Builder" },
+                  { href: "/broken-top-builder", label: "Broken Top Builder" },
+                  { href: "/caldera-springs-builder", label: "Caldera Springs Builder" },
+                  { href: "/sunriver-builder", label: "Sunriver Builder" },
+                  { href: "/neighborhoods", label: "All 19 Communities →" },
+                ].map(link => (
+                  <li key={link.href}>
+                    <Link href={link.href}>
+                      <span className="font-body text-sm text-muted-foreground hover:text-amber transition-colors">{link.label}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-display font-semibold text-timber mb-3 text-sm uppercase tracking-wide">Popular Searches</h3>
+              <ul className="space-y-2">
+                {[
+                  { href: "/luxury-home-builder-bend-oregon", label: "Luxury Home Builder Bend" },
+                  { href: "/home-builder-bend-oregon", label: "Home Builder Bend Oregon" },
+                  { href: "/custom-home-builder-near-me", label: "Custom Home Builder Near Me" },
+                  { href: "/cost-to-build-custom-home-bend-oregon", label: "Cost to Build in Bend" },
+                  { href: "/services", label: "Our Services" },
+                  { href: "/compare-communities", label: "Compare Communities" },
+                  { href: "/dream-home-builder", label: "Dream Home Builder Tool" },
+                ].map(link => (
+                  <li key={link.href}>
+                    <Link href={link.href}>
+                      <span className="font-body text-sm text-muted-foreground hover:text-amber transition-colors">{link.label}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-display font-semibold text-timber mb-3 text-sm uppercase tracking-wide">Resources</h3>
+              <ul className="space-y-2">
+                {[
+                  { href: "/portfolio", label: "Portfolio Gallery" },
+                  { href: "/about", label: "About Kevin Rea" },
+                  { href: "/faq", label: "Building FAQs" },
+                  { href: "/resources", label: "Free Guides & Downloads" },
+                  { href: "/testimonials", label: "Client Testimonials" },
+                  { href: "/blog", label: "Blog & Articles" },
+                  { href: "/news", label: "Industry News" },
+                ].map(link => (
+                  <li key={link.href}>
+                    <Link href={link.href}>
+                      <span className="font-body text-sm text-muted-foreground hover:text-amber transition-colors">{link.label}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-display font-semibold text-timber mb-3 text-sm uppercase tracking-wide">More Locations</h3>
+              <ul className="space-y-2">
+                {[
+                  { href: "/awbrey-butte-builder", label: "Awbrey Butte Builder" },
+                  { href: "/awbrey-glen-builder", label: "Awbrey Glen Builder" },
+                  { href: "/black-butte-ranch-builder", label: "Black Butte Ranch" },
+                  { href: "/juniper-preserve-builder", label: "Juniper Preserve" },
+                  { href: "/redmond-builder", label: "Redmond Builder" },
+                  { href: "/sisters-builder", label: "Sisters Builder" },
+                  { href: "/eagle-crest-builder", label: "Eagle Crest Builder" },
+                ].map(link => (
+                  <li key={link.href}>
+                    <Link href={link.href}>
+                      <span className="font-body text-sm text-muted-foreground hover:text-amber transition-colors">{link.label}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>

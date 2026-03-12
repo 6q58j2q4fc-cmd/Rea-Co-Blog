@@ -608,3 +608,31 @@
 - [x] Reduce article keywords to 3-8 focused terms (removed 22 competitor keywords)
 - [x] Add max-image-preview:large, max-snippet:-1 robots directives
 - [x] Add geo meta tags (geo.region, geo.placename, geo.position, ICBM)
+
+## State-of-the-Art SEO Overhaul (Mar 12, 2026)
+- [x] Add HowTo schema for custom home building process (AdvancedSEO component)
+- [x] Add Service schema with detailed offerings and pricing (/services page)
+- [x] Add Person schema for Kevin Rea with E-E-A-T signals (AdvancedSEO component)
+- [x] Add Review/AggregateRating schema to all location pages (AdvancedSEO component)
+- [x] Add speakable schema for voice search optimization (AdvancedSEO component)
+- [x] Upgrade LocalBusiness to HomeAndConstructionBusiness type with full NAP
+- [x] Add SiteLinksSearchBox schema (WebSite schema in AdvancedSEO)
+- [x] Update robots.txt with crawl-delay, all bots, AI blocking, and all sitemaps
+- [x] Add hreflang tags for US English (index.html)
+- [x] Add preload hints for LCP images (index.html)
+- [x] Add resource hints (preconnect, dns-prefetch) for all CDN domains (index.html)
+- [x] Create dedicated /services page with Service schema
+- [x] Create /cost-to-build-custom-home-bend-oregon page for featured snippets
+- [x] Add "near me" keyword targeting (/custom-home-builder-near-me page)
+- [x] Add voice search FAQ optimization (conversational queries in FAQs)
+- [x] Implement E-E-A-T signals (Experience, Expertise, Authoritativeness, Trust)
+- [x] Add internal linking hub on Home page for all communities and keyword pages
+- [x] Add structured data for testimonials/reviews (Review schema on Home page)
+- [x] Add speakable schema for voice assistants (AdvancedSEO component)
+- [x] Create /luxury-home-builder-bend-oregon page targeting high-value queries
+- [x] Create /home-builder-bend-oregon page for primary keyword
+- [x] Add new SEO pages to sitemap with correct priority/changefreq
+- [x] Add new SEO pages to Footer internal linking (More Resources section)
+- [x] Add Services link to Header navigation
+- [x] Add image sitemap entries for all CDN images
+- [x] Comprehensive robots.txt with AI bot blocking and social media crawlers
