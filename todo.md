@@ -681,3 +681,9 @@
 - [x] Update email drip campaign URLs to use custom domain (10 replacements)
 - [x] Test all changes (43 tests passing)
 - [x] Verify all shared links display custom domain
+
+## Houzz Integration (Mar 31, 2026)
+- [x] Generate Houzz standard logo
+- [x] Add Houzz profile link to footer with embedded logo
+- [x] Test Houzz link functionality (all 43 tests passing)
+- [x] Houzz logo displays at h-8 with hover opacity effect

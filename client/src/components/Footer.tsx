@@ -248,6 +248,19 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-6">
             <a
+              href="https://www.houzz.com/professionals/general-contractors/rea-company-homes-pfvwus-pf~1635909979"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View Rea Company Homes on Houzz"
+              className="transition-opacity hover:opacity-80"
+            >
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/houzz-logo-gd2YTPuRZFGZcsezC5EUHd.webp"
+                alt="Rea Company Homes on Houzz"
+                className="h-8 w-auto"
+              />
+            </a>
+            <a
               href="https://www.reacohomes.com"
               target="_blank"
               rel="noopener noreferrer"
