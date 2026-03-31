@@ -46,6 +46,14 @@ const CONTENT_TOPICS = [
   { category: "Design Trends", keywords: ["2026 custom home trends", "modern mountain home design", "luxury home trends Oregon", "contemporary rustic design"] },
   { category: "Outdoor Living", keywords: ["outdoor living design Bend", "patio design Central Oregon", "outdoor kitchen custom home", "fire pit design high desert"] },
   { category: "Energy Efficiency", keywords: ["energy efficient home Oregon", "solar ready custom home", "passive house design Bend", "net zero home Central Oregon"] },
+  { category: "Near Me Searches", keywords: ["custom home builder near me", "luxury homes near me", "best builder near me Bend", "custom home contractor near me"] },
+  { category: "Comparison Content", keywords: ["custom home builder vs general contractor", "custom home builder vs contractor difference", "luxury builder comparison", "builder selection criteria"] },
+  { category: "Featured Snippet Targets", keywords: ["how much does it cost to build a custom home", "how long does it take to build a custom home", "what should I look for in a custom home builder", "how to choose a custom home builder"] },
+  { category: "Local Neighborhoods Extended", keywords: ["Caldera Springs homes", "Black Butte Ranch builder", "Juniper Preserve custom homes", "Northwest Crossing builder"] },
+  { category: "City Variations", keywords: ["custom home builder Redmond Oregon", "custom homes La Pine Oregon", "builder Sisters Oregon", "Sunriver custom homes"] },
+  { category: "Question-Based", keywords: ["what is a custom home builder", "why build a custom home", "benefits of custom home building", "custom home building advantages"] },
+  { category: "Service-Based", keywords: ["luxury home renovation", "custom home addition", "high-end home remodeling", "outdoor living design Bend"] },
+  { category: "Trust & Authority", keywords: ["award-winning custom home builder", "best of show home builder", "certified custom home builder", "licensed home builder Oregon"] },
 ];
 
 function generateSlug(title: string): string {
@@ -235,21 +243,32 @@ async function runScheduledGeneration(): Promise<void> {
     const now = new Date();
     const lastRun = config.lastRunAt ? new Date(config.lastRunAt) : null;
     
-    // 1 article per day: minimum 24 hours between runs
-    const minTimeBetweenRuns = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+    // 2-3 articles per day: generate every 8 hours (3 articles) or 12 hours (2 articles)
+    // Using 8-hour intervals for 3 articles per day
+    const minTimeBetweenRuns = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
     
-    // Skip if we already ran within the last 24 hours
+    // Skip if we already ran within the last 8 hours
     if (lastRun && (now.getTime() - lastRun.getTime()) < minTimeBetweenRuns) {
       const hoursAgo = Math.round((now.getTime() - lastRun.getTime()) / (60 * 60 * 1000));
-      console.log(`[Scheduler] Article already posted ${hoursAgo}h ago, next post in ${24 - hoursAgo}h`);
+      const minutesAgo = Math.round(((now.getTime() - lastRun.getTime()) % (60 * 60 * 1000)) / (60 * 1000));
+      console.log(`[Scheduler] Article already posted ${hoursAgo}h ${minutesAgo}m ago, next post in ~${8 - hoursAgo}h`);
       return;
     }
     
-    console.log("[Scheduler] 24 hours since last article - generating today's article");
+    console.log("[Scheduler] 8 hours since last article - generating new article (targeting 3 per day)");
 
     console.log("[Scheduler] Running scheduled content generation...");
     
+    // Generate 1-2 articles per run for variety
+    let articlesGenerated = 0;
     const success = await createScheduledArticle();
+    if (success) articlesGenerated++;
+    
+    // Occasionally generate 2 articles in one run for content diversity
+    if (Math.random() > 0.6) {
+      const secondSuccess = await createScheduledArticle();
+      if (secondSuccess) articlesGenerated++;
+    }
     
     if (success) {
       // Update last run time and calculate next run

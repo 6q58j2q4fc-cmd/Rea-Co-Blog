@@ -648,3 +648,17 @@
 - [x] Verify description is within 50-160 character range
 - [x] Maintain key SEO keywords (custom home builder, Bend, Oregon, Kevin Rea)
 - [x] All 43 tests passing
+
+## Comprehensive Daily Blog Automation & SEO Expansion (Mar 31, 2026)
+- [x] Verify scheduler is running and check current article count
+- [x] Research top Google Ads keywords for Central Oregon custom home builder market
+- [x] Research long-tail keyword variations (how much, best, near me, etc.)
+- [x] Research common misspellings and typos for this market
+- [x] Update scheduler to post 2-3 articles per day instead of 1 (every 8 hours)
+- [x] Create dedicated landing pages for top 4 common misspellings
+- [x] Configure article generation to target all keyword variations (20+ categories)
+- [x] Ensure each article is individually searchable and indexed (/articles/:slug)
+- [x] Add articles to XML sitemap dynamically
+- [x] Wire misspelling pages into App.tsx routes
+- [ ] Monitor scheduler performance once LLM usage is restored
+- [ ] Track article performance and adjust keyword focus based on traffic

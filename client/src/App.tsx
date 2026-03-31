@@ -59,6 +59,10 @@ import BendOregonHomeBuilder from "./pages/BendOregonHomeBuilder";
 import CustomHomeBuilderNearMe from "./pages/CustomHomeBuilderNearMe";
 import CostToBuild from "./pages/CostToBuild";
 import Services from "./pages/Services";
+import CustomeHomeBuilder from "./pages/CustomeHomeBuilder";
+import CustomHomeBulider from "./pages/CustomHomeBulider";
+import CustonHomeBuilder from "./pages/CustonHomeBuilder";
+import CustomHomeBuider from "./pages/CustomHomeBuider";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -113,6 +117,11 @@ function Router() {
       <Route path="/custom-home-builder-near-me" component={CustomHomeBuilderNearMe} />
       <Route path="/cost-to-build-custom-home-bend-oregon" component={CostToBuild} />
       <Route path="/services" component={Services} />
+      {/* Misspelling landing pages for additional SEO coverage */}
+      <Route path="/custome-home-builder" component={CustomeHomeBuilder} />
+      <Route path="/custom-home-bulider" component={CustomHomeBulider} />
+      <Route path="/custon-home-builder" component={CustonHomeBuilder} />
+      <Route path="/custom-home-buider" component={CustomHomeBuider} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
