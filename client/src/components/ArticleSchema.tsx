@@ -43,10 +43,10 @@ export default function ArticleSchema({
 
     const baseUrl = "https://bendoregonluxuryhomebuilder.com";
 
-    // Article Schema
-    const articleSchema = {
+    // BlogPosting Schema (extends Article for better blog post recognition)
+    const blogPostingSchema = {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": "BlogPosting",
       headline: title,
       description: description,
       image: {
@@ -97,6 +97,16 @@ export default function ArticleSchema({
         "@type": "Thing",
         name: "Custom Home Building in Central Oregon",
       },
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: ["h1", "h2", "p"],
+      },
+    };
+
+    // Article Schema (for general article compatibility)
+    const articleSchema = {
+      ...blogPostingSchema,
+      "@type": "Article",
     };
 
     // Breadcrumb Schema
@@ -202,7 +212,14 @@ export default function ArticleSchema({
       },
     };
 
-    // Create and append Article schema
+    // Create and append BlogPosting schema
+    const blogPostingScript = document.createElement("script");
+    blogPostingScript.type = "application/ld+json";
+    blogPostingScript.setAttribute("data-schema-type", "blogposting");
+    blogPostingScript.textContent = JSON.stringify(blogPostingSchema);
+    document.head.appendChild(blogPostingScript);
+
+    // Create and append Article schema (for compatibility)
     const articleScript = document.createElement("script");
     articleScript.type = "application/ld+json";
     articleScript.setAttribute("data-schema-type", "article");

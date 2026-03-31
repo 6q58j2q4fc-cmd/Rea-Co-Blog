@@ -7,20 +7,45 @@ import { Link } from "wouter";
 
 /**
  * Custome Home Builder - Misspelling Landing Page
- * Targets the common misspelling "custome" instead of "custom"
- * Provides 301 redirect to /services but also serves SEO value
+ * Option A Strategy: Correct spelling in visible content, hidden meta/schema targeting misspelled terms
+ * This page targets typo searches while maintaining professional appearance
  */
 
 export default function CustomeHomeBuilder() {
   return (
     <div className="min-h-screen">
       <PageSEO
-        title="Custome Home Builder Bend Oregon | Custom Homes | Rea Co Homes"
-        description="Award-winning custome home builder in Bend, Oregon. Kevin Rea builds luxury custom homes in Central Oregon since 1977."
+        title="Custome Home Builder Bend Oregon | Award-Winning Custom Homes | Rea Co Homes"
+        description="Searching for a custome home builder in Bend, Oregon? Rea Co Homes builds luxury custom homes in Central Oregon. 45+ years experience."
         canonicalUrl="/custome-home-builder"
-        keywords={["custome home builder", "custom home builder", "luxury homes Bend Oregon"]}
+        keywords={["custome home builder", "custome homes", "custome builder", "custom home builder", "luxury homes Bend Oregon"]}
       />
       <AdvancedSEO />
+      
+      {/* Hidden schema markup for typo targeting - not visible to users */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://bendoregonluxuryhomebuilder.com/custome-home-builder",
+          "name": "Rea Co Homes - Custom Home Builder",
+          "description": "Award-winning custom home builder in Bend, Oregon. Serving Central Oregon for 45+ years.",
+          "alternateName": ["custome home builder", "custom home builder", "luxury home builder"],
+          "url": "https://bendoregonluxuryhomebuilder.com",
+          "telephone": "541-390-9848",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Central Oregon",
+            "addressLocality": "Bend",
+            "addressRegion": "OR",
+            "postalCode": "97701",
+            "addressCountry": "US"
+          },
+          "areaServed": ["Bend", "Central Oregon", "Brasada Ranch", "Tetherow", "Pronghorn"],
+          "priceRange": "$$$",
+          "sameAs": "https://bendoregonluxuryhomebuilder.com"
+        })
+      }} />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center">
@@ -40,7 +65,7 @@ export default function CustomeHomeBuilder() {
               Award-Winning Custom Homes in Central Oregon
             </h1>
             <p className="font-body text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
-              Since 1977, Kevin Rea has been crafting exceptional luxury custom homes with uncompromising dedication to detail and an artistic touch.
+              Since 1977, Kevin Rea has been crafting exceptional luxury custom homes with uncompromising dedication to detail and an artistic touch. From Brasada Ranch to Tetherow, we bring your vision to life.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

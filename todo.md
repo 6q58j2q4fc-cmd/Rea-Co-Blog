@@ -662,3 +662,13 @@
 - [x] Wire misspelling pages into App.tsx routes
 - [ ] Monitor scheduler performance once LLM usage is restored
 - [ ] Track article performance and adjust keyword focus based on traffic
+
+## Advanced SEO: Google Ads Research & Misspelling Targeting (Mar 31, 2026)
+- [x] Research Google Ads top search terms for Bend Oregon custom home builder market
+- [x] Identify top 50+ keywords with search volume and competition data
+- [x] Research common misspellings: custome, bulider, custon, buider
+- [x] Update misspelling pages with Option A strategy (correct visible content, hidden meta/schema)
+- [x] Add hidden LocalBusiness schema with alternateName to all misspelling pages
+- [x] Add BlogPosting schema to GeneratedArticle page with speakable markup
+- [x] Create comprehensive Google Ads keyword research document (GOOGLE_ADS_KEYWORD_RESEARCH.md)
+- [x] All 43 tests passing

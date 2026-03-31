@@ -20,6 +20,31 @@ export default function CustomHomeBulider() {
         keywords={["custom home bulider", "custom home builder", "luxury homes Bend"]}
       />
       <AdvancedSEO />
+      
+      {/* Hidden schema markup for typo targeting */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://bendoregonluxuryhomebuilder.com/custom-home-bulider",
+          "name": "Rea Co Homes - Custom Home Builder",
+          "description": "Award-winning custom home builder in Bend, Oregon. Serving Central Oregon for 45+ years.",
+          "alternateName": ["custom home bulider", "custom home builder", "luxury home builder"],
+          "url": "https://bendoregonluxuryhomebuilder.com",
+          "telephone": "541-390-9848",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Central Oregon",
+            "addressLocality": "Bend",
+            "addressRegion": "OR",
+            "postalCode": "97701",
+            "addressCountry": "US"
+          },
+          "areaServed": ["Bend", "Central Oregon", "Brasada Ranch", "Tetherow", "Pronghorn"],
+          "priceRange": "$$$",
+          "sameAs": "https://bendoregonluxuryhomebuilder.com"
+        })
+      }} />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center">
