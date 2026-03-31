@@ -10,6 +10,7 @@ import PageSEO from "@/components/PageSEO";
 import AdvancedSEO from "@/components/AdvancedSEO";
 import Footer from "@/components/Footer";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
+import TestimonialSlider from "@/components/TestimonialSlider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
@@ -404,62 +405,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section - E-E-A-T */}
-      <section className="py-20 bg-stone">
-        <div className="container">
-          <div className="text-center mb-12">
-            <p className="font-body text-amber uppercase tracking-widest text-sm mb-4">
-              Client Testimonials
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-timber mb-4">
-              What Our Clients Say
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card
-                key={index}
-                className="bg-white border-0 shadow-lg p-6 relative"
-                itemScope
-                itemType="https://schema.org/Review"
-              >
-                <div className="absolute top-4 right-4 flex gap-1">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-4 h-4 fill-amber text-amber"
-                    />
-                  ))}
-                </div>
-                <CardContent className="p-0 pt-8">
-                  <p className="font-body text-muted-foreground italic mb-6 leading-relaxed" itemProp="reviewBody">
-                    "{testimonial.quote}"
-                  </p>
-                  <div className="border-t border-border pt-4">
-                    <p className="font-display font-semibold text-timber" itemProp="author">
-                      {testimonial.author}
-                    </p>
-                    <p className="font-body text-sm text-amber flex items-center gap-1">
-                      <MapPin className="w-3 h-3" />
-                      {testimonial.location}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link href="/testimonials">
-              <Button variant="outline" className="border-timber text-timber hover:bg-timber hover:text-white font-body font-semibold uppercase tracking-wide">
-                Read All Testimonials
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Testimonials Slider - Auto-scrolling with verified testimonials */}
+      <TestimonialSlider />
 
       {/* FAQ Section for Rich Snippets */}
       <section className="py-20 bg-cream">

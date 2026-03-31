@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { toast } from "sonner";
+import VerifiedContractorBadges from "./VerifiedContractorBadges";
 
 const quickLinks = [
   { href: "/portfolio", label: "Portfolio" },
@@ -271,6 +272,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Verified Contractor Badges */}
+      <VerifiedContractorBadges />
     </footer>
   );
 }
