@@ -78,8 +78,8 @@ export default function GeneratedArticle() {
       <ArticleSchema
         title={article.title}
         description={article.metaDescription || article.excerpt || ""}
-        url={`https://reacohomes.com/articles/${slug}`}
-        image={article.featuredImage || "https://reacohomes.com/images/hero-main.jpg"}
+        url={`https://bendoregonluxuryhomebuilder.com/articles/${slug}`}
+        image={article.featuredImage || "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"}
         datePublished={article.publishedAt ? new Date(article.publishedAt).toISOString() : new Date().toISOString()}
         dateModified={article.updatedAt ? new Date(article.updatedAt).toISOString() : undefined}
         authorName={article.authorName || "Kevin Rea"}
@@ -142,7 +142,7 @@ export default function GeneratedArticle() {
             {/* Social Share Buttons */}
             <div className="mt-6 pt-6 border-t border-white/20 flex items-center justify-between flex-wrap gap-4">
               <SocialShareButtons
-                url={typeof window !== "undefined" ? window.location.href : `https://reacohomes.com/articles/${slug}`}
+                url={typeof window !== "undefined" ? window.location.href : `https://bendoregonluxuryhomebuilder.com/articles/${slug}`}
                 title={article.title}
                 description={article.excerpt || ""}
                 image={article.featuredImage || "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"}

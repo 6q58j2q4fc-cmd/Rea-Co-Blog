@@ -672,3 +672,12 @@
 - [x] Add BlogPosting schema to GeneratedArticle page with speakable markup
 - [x] Create comprehensive Google Ads keyword research document (GOOGLE_ADS_KEYWORD_RESEARCH.md)
 - [x] All 43 tests passing
+
+## Domain Fix: Article Share Links (Mar 31, 2026)
+- [x] Fix article share links to use bendoregonluxuryhomebuilder.com instead of manus.space domain
+- [x] Update ArticleSchema URL to use custom domain
+- [x] Update SocialShareButtons URL to use custom domain
+- [x] Update RSS feed URLs to use custom domain (SITE_URL + article paths)
+- [x] Update email drip campaign URLs to use custom domain (10 replacements)
+- [x] Test all changes (43 tests passing)
+- [x] Verify all shared links display custom domain

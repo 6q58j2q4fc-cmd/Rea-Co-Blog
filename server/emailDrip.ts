@@ -52,7 +52,7 @@ const WELCOME_SEQUENCE_EMAILS = [
     <li>Working with architects and designers</li>
   </ul>
   
-  <p>In the meantime, feel free to explore our <a href="https://reacohomes.com/portfolio" style="color: #D4A574;">portfolio of custom homes</a> for inspiration.</p>
+  <p>In the meantime, feel free to explore our <a href="https://bendoregonluxuryhomebuilder.com/portfolio" style="color: #D4A574;">portfolio of custom homes</a> for inspiration.</p>
   
   <div style="background: #F5F0EB; padding: 20px; border-radius: 8px; margin: 30px 0;">
     <p style="margin: 0; font-weight: bold;">Ready to discuss your project?</p>
@@ -70,7 +70,7 @@ const WELCOME_SEQUENCE_EMAILS = [
   
   <p style="font-size: 12px; color: #999; text-align: center;">
     You're receiving this because you downloaded our Custom Home Building Guide.<br>
-    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://reacohomes.com" style="color: #999;">Visit our website</a>
+    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://bendoregonluxuryhomebuilder.com" style="color: #999;">Visit our website</a>
   </p>
 </body>
 </html>
@@ -141,7 +141,7 @@ kevin@reacohomes.com
   
   <hr style="border: none; border-top: 1px solid #E5DED6; margin: 30px 0;">
   <p style="font-size: 12px; color: #999; text-align: center;">
-    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://reacohomes.com" style="color: #999;">Rea Co Homes</a>
+    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://bendoregonluxuryhomebuilder.com" style="color: #999;">Rea Co Homes</a>
   </p>
 </body>
 </html>
@@ -235,7 +235,7 @@ Kevin Rea
   
   <hr style="border: none; border-top: 1px solid #E5DED6; margin: 30px 0;">
   <p style="font-size: 12px; color: #999; text-align: center;">
-    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://reacohomes.com" style="color: #999;">Rea Co Homes</a>
+    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://bendoregonluxuryhomebuilder.com" style="color: #999;">Rea Co Homes</a>
   </p>
 </body>
 </html>
@@ -313,14 +313,14 @@ Kevin Rea`
   </ul>
   
   <div style="background: #F5F0EB; padding: 20px; border-radius: 8px; margin: 30px 0;">
-    <p style="margin: 0;">Want to see these features in action? <a href="https://reacohomes.com/portfolio" style="color: #D4A574;">Browse our portfolio</a> or schedule a tour of a completed home.</p>
+    <p style="margin: 0;">Want to see these features in action? <a href="https://bendoregonluxuryhomebuilder.com/portfolio" style="color: #D4A574;">Browse our portfolio</a> or schedule a tour of a completed home.</p>
   </div>
   
   <p>Best,<br><strong>Kevin Rea</strong><br>541-390-9848</p>
   
   <hr style="border: none; border-top: 1px solid #E5DED6; margin: 30px 0;">
   <p style="font-size: 12px; color: #999; text-align: center;">
-    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://reacohomes.com" style="color: #999;">Rea Co Homes</a>
+    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://bendoregonluxuryhomebuilder.com" style="color: #999;">Rea Co Homes</a>
   </p>
 </body>
 </html>
@@ -403,7 +403,7 @@ Kevin Rea
   
   <hr style="border: none; border-top: 1px solid #E5DED6; margin: 30px 0;">
   <p style="font-size: 12px; color: #999; text-align: center;">
-    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://reacohomes.com" style="color: #999;">Rea Co Homes</a>
+    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://bendoregonluxuryhomebuilder.com" style="color: #999;">Rea Co Homes</a>
   </p>
 </body>
 </html>
@@ -498,7 +498,7 @@ Kevin Rea
   
   <hr style="border: none; border-top: 1px solid #E5DED6; margin: 30px 0;">
   <p style="font-size: 12px; color: #999; text-align: center;">
-    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://reacohomes.com" style="color: #999;">Rea Co Homes</a>
+    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://bendoregonluxuryhomebuilder.com" style="color: #999;">Rea Co Homes</a>
   </p>
 </body>
 </html>
@@ -584,7 +584,7 @@ Kevin Rea
   
   <hr style="border: none; border-top: 1px solid #E5DED6; margin: 30px 0;">
   <p style="font-size: 12px; color: #999; text-align: center;">
-    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://reacohomes.com" style="color: #999;">Rea Co Homes</a>
+    <a href="{{unsubscribe_url}}" style="color: #999;">Unsubscribe</a> | <a href="https://bendoregonluxuryhomebuilder.com" style="color: #999;">Rea Co Homes</a>
   </p>
 </body>
 </html>
@@ -774,7 +774,7 @@ export async function processEmailQueue(): Promise<number> {
     
     try {
       // Send email via notification system
-      const unsubscribeUrl = `https://reacohomes.com/unsubscribe?id=${subscriber.id}`;
+      const unsubscribeUrl = `https://bendoregonluxuryhomebuilder.com/unsubscribe?id=${subscriber.id}`;
       const htmlContent = template.htmlContent.replace(/\{\{unsubscribe_url\}\}/g, unsubscribeUrl);
       
       // Use the notification API to send email

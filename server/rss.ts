@@ -7,7 +7,7 @@ import { getDb } from "./db";
 import { articles } from "../drizzle/schema";
 import { desc, eq } from "drizzle-orm";
 
-const SITE_URL = "https://reacohomes.com";
+const SITE_URL = "https://bendoregonluxuryhomebuilder.com";
 const SITE_TITLE = "Rea Co Homes - Central Oregon Custom Home Builder";
 const SITE_DESCRIPTION = "Expert insights on luxury custom home building in Central Oregon. Tips, trends, and inspiration from Kevin Rea, master builder since 1977.";
 
@@ -29,7 +29,7 @@ export async function generateRSSFeed(): Promise<string> {
   
   for (const article of latestArticles) {
     const pubDate = new Date(article.createdAt).toUTCString();
-    const articleUrl = `${SITE_URL}/blog/${article.slug}`;
+    const articleUrl = `${SITE_URL}/articles/${article.slug}`;
     
     // Escape XML special characters
     const title = escapeXml(article.title);
@@ -112,7 +112,7 @@ export async function generateAtomFeed(): Promise<string> {
   for (const article of latestArticles) {
     const updated = new Date(article.updatedAt || article.createdAt).toISOString();
     const published = new Date(article.createdAt).toISOString();
-    const articleUrl = `${SITE_URL}/blog/${article.slug}`;
+    const articleUrl = `${SITE_URL}/articles/${article.slug}`;
     
     const title = escapeXml(article.title);
     const summary = escapeXml(article.excerpt || article.content.substring(0, 300) + "...");
@@ -151,7 +151,7 @@ export async function generateAtomFeed(): Promise<string> {
   <icon>${SITE_URL}/favicon.ico</icon>
   <logo>${SITE_URL}/images/kevin-rea.webp</logo>
   <rights>Copyright ${new Date().getFullYear()} Rea Co Homes. All rights reserved.</rights>
-  <generator uri="https://reacohomes.com" version="1.0">Rea Co Homes</generator>
+      <generator uri="https://bendoregonluxuryhomebuilder.com" version="1.0">Rea Co Homes</generator>
   ${atomEntries}
 </feed>`;
 
