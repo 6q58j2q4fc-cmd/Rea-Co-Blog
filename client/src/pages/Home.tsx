@@ -92,7 +92,7 @@ export default function Home() {
     <div className="min-h-screen">
       <PageSEO
         title="Custom Home Builder Bend Oregon | Kevin Rea | Rea Co Homes"
-        description="Award-winning custom home builder in Bend, Oregon since 1977. Kevin Rea builds luxury homes in Brasada Ranch, Tetherow & all Central Oregon communities. CCB #193427. Call 541-390-9848."
+        description="Award-winning custom home builder in Bend, Oregon. Kevin Rea builds luxury homes in Central Oregon since 1977. CCB #193427."
         canonicalUrl="/"
         ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"
         keywords={["custom home builder Bend Oregon", "luxury homes Central Oregon", "Brasada Ranch builder", "Tetherow custom homes", "home construction Bend"]}
