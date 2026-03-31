@@ -257,7 +257,7 @@ export default function Home() {
 
             <div className="relative">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_e5f6g7h8.webp"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/IMG_9490_427925df.jpeg"
                 alt="Kevin Rea - Master Custom Home Builder in Central Oregon since 1977"
                 className="rounded-lg shadow-2xl"
                 width="600"

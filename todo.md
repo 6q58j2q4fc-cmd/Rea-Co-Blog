@@ -636,3 +636,9 @@
 - [x] Add Services link to Header navigation
 - [x] Add image sitemap entries for all CDN images
 - [x] Comprehensive robots.txt with AI bot blocking and social media crawlers
+
+## Kevin Rea Portrait Update (Mar 31, 2026)
+- [x] Replace broken Kevin Rea image on Home page with new portrait
+- [x] Upload new image to S3 CDN (IMG_9490_427925df.jpeg)
+- [x] Update Home.tsx image reference to new CDN URL
+- [x] Verify all tests pass (43 tests passing)
