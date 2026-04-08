@@ -16,10 +16,12 @@ import { Link, useParams } from "wouter";
 import { ArrowLeft, Phone, Mail, Globe, Calendar, Eye, Tag, User, Clock, Printer } from "lucide-react";
 import { calculateReadingTime, formatReadingTime } from "@/components/ReadingTime";
 import { Streamdown } from "streamdown";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export default function GeneratedArticle() {
   const { slug } = useParams<{ slug: string }>();
   const { data: article, isLoading } = trpc.articles.getBySlug.useQuery({ slug: slug || "" });
+  const { data: allArticles = [] } = trpc.articles.list.useQuery({ limit: 100 });
   // Views are already tracked in getBySlug query
 
   if (isLoading) {
@@ -284,6 +286,27 @@ export default function GeneratedArticle() {
           </div>
         </div>
       </section>
+
+      {/* Related Articles */}
+      {article && allArticles && allArticles.length > 0 && (
+        <section className="bg-cream py-16">
+          <div className="container">
+            <RelatedArticles
+              articles={allArticles
+                .filter((a) => a.id !== article.id)
+                .map((a) => ({
+                  id: a.id,
+                  title: a.title,
+                  slug: a.slug,
+                  excerpt: a.excerpt || "",
+                  category: a.category,
+                  publishedAt: a.publishedAt?.toString(),
+                  image: a.featuredImage || undefined,
+                }))}
+            />
+          </div>
+        </section>
+      )}
 
       <Footer />
     </div>

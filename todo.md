@@ -756,3 +756,11 @@
 - [x] Enhance featured cards with larger images, better shadows, and hover animations
 - [x] Add reading time to featured articles
 - [x] Add category badges to featured articles
+
+
+## Related Articles Feature (Apr 8, 2026)
+- [x] RelatedArticles component already exists
+- [x] Implement article matching logic (by category and tags) - already in component
+- [x] Add RelatedArticles to GeneratedArticle page (displays at bottom with cream background)
+- [x] Style related articles cards to match blog theme (consistent with blog styling)
+- [x] Test with multiple articles (all 43 tests passing)
