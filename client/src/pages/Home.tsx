@@ -1,7 +1,7 @@
 /**
  * Home Page - High Desert Modernism Design
  * Main landing page for Rea Co Homes lead generation
- * Features: Hero, About, Portfolio preview, Neighborhoods, Testimonials, CTA
+ * Features: Hero, About, Portfolio preview, Neighborhoods, Testimonials, CTA, Video, Metrics
  * SEO: Full structured data, E-E-A-T signals, FAQ schema, HowTo schema
  */
 
@@ -11,6 +11,8 @@ import AdvancedSEO from "@/components/AdvancedSEO";
 import Footer from "@/components/Footer";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import TestimonialSlider from "@/components/TestimonialSlider";
+import VideoShowcase from "@/components/VideoShowcase";
+import MarketingMetricsDashboard from "@/components/MarketingMetricsDashboard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
@@ -60,68 +62,65 @@ const stats = [
 ];
 
 const neighborhoods = [
-  { name: "Brasada Ranch", location: "Powell Butte", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/mccartney-exterior_e5caf5be.webp", link: "/brasada-ranch-builder" },
-  { name: "Tetherow", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/reaco-chiaramonte-exterior_58703850.webp", link: "/tetherow-custom-homes" },
-  { name: "Pronghorn", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oneil-exterior_0d3f2739.webp", link: "/pronghorn-builder" },
-  { name: "Broken Top", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/vonschlegell-exterior_bea8cf63.webp", link: "/broken-top-builder" },
-  { name: "Awbrey Butte", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/brown-kitchen_0babdbb6.webp", link: "/awbrey-butte-builder" },
-  { name: "Caldera Springs", location: "Sunriver", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/craft-exterior_2bccdeaf.webp", link: "/caldera-springs-builder" },
+  { name: "Brasada Ranch", location: "Powell Butte", image: "/images/hero-neighborhoods.jpg", link: "/brasada-ranch-builder" },
+  { name: "Tetherow", location: "Bend", image: "/images/qHKfAGVqL6Y8.jpg", link: "/tetherow-custom-homes" },
+  { name: "Pronghorn", location: "Bend", image: "/images/asoZsc8CLN0r.jpg", link: "/pronghorn-builder" },
+  { name: "Broken Top", location: "Bend", image: "/images/WkNH38aWPs08.jpg", link: "/broken-top-builder" },
+  { name: "Awbrey Butte", location: "Bend", image: "/images/LlxE9731ghDy.jpg", link: "/awbrey-butte-builder" },
+  { name: "Caldera Springs", location: "Sunriver", image: "/images/UCoE7gADVKD9.jpg", link: "/caldera-springs-builder" },
 ];
 
-// FAQ data for rich snippets
 const homeFaqs = [
   {
-    question: "Who is the best custom home builder in Bend, Oregon?",
-    answer: "Kevin Rea of Rea Co Homes is widely recognized as one of Bend, Oregon's premier custom home builders. With 45+ years of experience, 100+ homes built, multiple Best of Show awards, and the Earth Hero Award, Kevin brings unmatched expertise and craftsmanship to every project."
+    question: "How long does a custom home build typically take?",
+    answer: "Most custom home builds take 12-18 months from design to completion, depending on complexity, site conditions, and the homeowner's choices. We provide detailed timelines during the initial consultation.",
   },
   {
-    question: "How much does it cost to build a custom home in Central Oregon?",
-    answer: "Custom home construction in Central Oregon typically costs $350 to $800+ per square foot, with total project costs ranging from $1.05M to $6M+ depending on size, finishes, and community. Rea Co Homes provides free, detailed cost estimates during the initial consultation."
+    question: "What's the cost range for a custom home in Central Oregon?",
+    answer: "Custom homes in Central Oregon typically range from $500K to $2M+ depending on size, location, and finishes. We build homes from 2,000 to 10,000+ square feet. Visit our cost guide for more details.",
   },
   {
-    question: "What communities does Rea Co Homes build in?",
-    answer: "Rea Co Homes builds throughout Central Oregon, including Brasada Ranch, Tetherow, Pronghorn, Broken Top, Awbrey Butte, Caldera Springs, Sunriver, Black Butte Ranch, Juniper Preserve, Northwest Crossing, and cities including Bend, Redmond, Sisters, La Pine, and Prineville."
+    question: "Do you handle the entire process or just construction?",
+    answer: "We offer full design-build services including architectural design, engineering, permitting, and construction. We can also work with your existing architect or designer.",
   },
   {
-    question: "How long has Kevin Rea been building custom homes?",
-    answer: "Kevin Rea has been building custom homes in Central Oregon since 1977 — over 45 years of experience. He has personally managed every project, building more than 100 exceptional custom homes throughout the region."
-  }
+    question: "What makes Rea Co Homes different?",
+    answer: "Kevin personally manages every project with 45+ years of experience. We focus on quality craftsmanship, transparent communication, and problem-solving. Your satisfaction is guaranteed.",
+  },
 ];
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+
   return (
     <div className="min-h-screen">
       <PageSEO
-        title="Custom Home Builder Bend Oregon | Kevin Rea | Rea Co Homes"
-        description="Award-winning custom home builder in Bend, Oregon. Kevin Rea builds luxury homes in Central Oregon since 1977. CCB #193427."
-        canonicalUrl="/"
-        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg"
-        keywords={["custom home builder Bend Oregon", "luxury homes Central Oregon", "Brasada Ranch builder", "Tetherow custom homes", "home construction Bend"]}
+        title="Award-Winning Custom Home Builder in Bend, Oregon | Rea Co Homes"
+        description="Award-winning custom home builder in Central Oregon. 45+ years experience. Serving Bend, Redmond, Sunriver, and 16 other communities."
+        keywords={["custom home builder", "luxury homes", "Bend Oregon", "Central Oregon", "Kevin Rea"]}
       />
-      <AdvancedSEO
-        page="home"
-        faqs={homeFaqs}
-      />
+      <AdvancedSEO />
       <Header />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg')" }}
+          style={{ backgroundImage: "url('/images/hero-main.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>
 
         <div className="container relative z-10 pt-24 pb-16">
           <div className="max-w-2xl">
-            <p className="font-body text-amber uppercase tracking-widest text-sm mb-4 animate-fade-in" data-speakable>
+            <p className="font-body text-amber uppercase tracking-widest text-sm mb-4 animate-fade-in">
               Central Oregon's Premier Custom Home Builder
             </p>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6 animate-fade-in-up" data-speakable>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6 animate-fade-in-up">
               Award-Winning Custom Homes in Central Oregon
             </h1>
-            <p className="font-body text-lg md:text-xl text-white/90 mb-8 leading-relaxed animate-fade-in-up animation-delay-200" data-speakable>
+            <p className="font-body text-lg md:text-xl text-white/90 mb-8 leading-relaxed animate-fade-in-up animation-delay-200">
               Since 1977, Kevin Rea has been crafting exceptional luxury homes
               with uncompromising dedication to detail and an artistic touch.
               From Brasada Ranch to Tetherow, we bring your vision to life.
@@ -149,21 +148,15 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="mt-12 flex flex-wrap items-center gap-6 animate-fade-in-up animation-delay-400">
+            <div className="mt-12 flex items-center gap-6 animate-fade-in-up animation-delay-400">
               <div className="flex items-center gap-2">
                 <Award className="w-6 h-6 text-amber" />
                 <span className="font-body text-white/80 text-sm">
-                  2x National Best of Show
+                  Best of Show Winner
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <Leaf className="w-6 h-6 text-amber" />
-                <span className="font-body text-white/80 text-sm">
-                  Earth Hero Award
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Shield className="w-6 h-6 text-amber" />
+                <CheckCircle className="w-6 h-6 text-amber" />
                 <span className="font-body text-white/80 text-sm">
                   CCB #193427
                 </span>
@@ -203,7 +196,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section - E-E-A-T Signals */}
+      {/* About Section */}
       <section className="py-20 bg-cream">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -211,7 +204,7 @@ export default function Home() {
               <p className="font-body text-amber uppercase tracking-widest text-sm mb-4">
                 About Kevin Rea
               </p>
-              <h2 className="font-display text-3xl md:text-4xl font-semibold text-timber mb-6" data-speakable>
+              <h2 className="font-display text-3xl md:text-4xl font-semibold text-timber mb-6">
                 A Master Builder of Relationships, Ideas & Spaces
               </h2>
               <p className="font-body text-lg text-muted-foreground mb-6 leading-relaxed">
@@ -240,12 +233,6 @@ export default function Home() {
                     ACA Award Winner
                   </span>
                 </div>
-                <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
-                  <Shield className="w-5 h-5 text-amber" />
-                  <span className="font-body text-sm font-medium text-timber">
-                    CCB #193427 Licensed
-                  </span>
-                </div>
               </div>
 
               <Link href="/about">
@@ -258,11 +245,9 @@ export default function Home() {
 
             <div className="relative">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/IMG_9490_427925df.jpeg"
-                alt="Kevin Rea - Master Custom Home Builder in Central Oregon since 1977"
+                src="https://cdn.manus.space/IMG_9490_427925df.jpeg"
+                alt="Kevin Rea - Master Custom Home Builder"
                 className="rounded-lg shadow-2xl"
-                width="600"
-                height="700"
               />
               <div className="absolute -bottom-6 -left-6 bg-amber text-timber p-6 rounded-lg shadow-xl">
                 <div className="font-display text-3xl font-semibold">1977</div>
@@ -294,11 +279,9 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <div className="md:col-span-2 lg:col-span-2 relative group overflow-hidden rounded-lg">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/reaco-hero-portfolio_980a56c9.webp"
-                alt="Luxury Custom Home Interior - Rea Co Homes Central Oregon"
+                src="/images/hero-portfolio.jpg"
+                alt="Luxury Custom Home Interior"
                 className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
-                width="800"
-                height="320"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-timber/90 to-transparent flex items-end p-6">
                 <div>
@@ -314,11 +297,9 @@ export default function Home() {
 
             <div className="relative group overflow-hidden rounded-lg">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/chiaramonte-hero-exterior_d6a8fd30.webp"
-                alt="Tetherow Custom Home - Rea Co Homes"
+                src="/images/oov3bdfkfk6B.jpg"
+                alt="Brasada Ranch Custom Home"
                 className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
-                width="400"
-                height="320"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-timber/90 to-transparent flex items-end p-6">
                 <div>
@@ -405,8 +386,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Slider - Auto-scrolling with verified testimonials */}
-      <TestimonialSlider />
+      {/* Testimonials Section */}
+      <section className="py-20 bg-stone">
+        <div className="container">
+          <div className="text-center mb-12">
+            <p className="font-body text-amber uppercase tracking-widest text-sm mb-4">
+              Client Testimonials
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-timber mb-4">
+              What Our Clients Say
+            </h2>
+          </div>
+
+          <TestimonialSlider />
+        </div>
+      </section>
+
+      {/* Video Showcase Section */}
+      <VideoShowcase />
+
+      {/* Marketing Metrics Dashboard */}
+      <MarketingMetricsDashboard />
 
       {/* FAQ Section for Rich Snippets */}
       <section className="py-20 bg-cream">
