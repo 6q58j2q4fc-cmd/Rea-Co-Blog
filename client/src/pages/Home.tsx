@@ -114,7 +114,7 @@ export default function Home() {
 
         <div className="container relative z-10 pt-24 pb-16">
           <div className="max-w-2xl">
-            <p className="font-body text-amber uppercase tracking-widest text-sm mb-4 animate-fade-in">
+            <p className="font-body text-amber uppercase tracking-widest text-sm mb-4 animate-fade-in font-semibold opacity-100">
               Central Oregon's Premier Custom Home Builder
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6 animate-fade-in-up">
@@ -130,7 +130,7 @@ export default function Home() {
               <Link href="/contact">
                 <Button
                   size="lg"
-                  className="bg-amber text-timber hover:bg-amber/90 font-body font-semibold uppercase tracking-wide text-base px-8"
+                  className="bg-amber text-white hover:bg-amber/90 font-body font-semibold uppercase tracking-wide text-base px-8"
                 >
                   Start Your Project
                   <ArrowRight className="w-5 h-5 ml-2" />

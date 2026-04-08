@@ -764,3 +764,9 @@
 - [x] Add RelatedArticles to GeneratedArticle page (displays at bottom with cream background)
 - [x] Style related articles cards to match blog theme (consistent with blog styling)
 - [x] Test with multiple articles (all 43 tests passing)
+
+
+## Color Contrast & Visibility Fixes (Apr 8, 2026)
+- [x] Increase opacity of orange tagline text (added font-semibold and opacity-100)
+- [x] Change orange button text from dark timber to white for better readability
+- [x] Verify all text meets WCAG AA contrast standards (white on amber, orange on white)
