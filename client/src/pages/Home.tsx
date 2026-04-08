@@ -62,12 +62,12 @@ const stats = [
 ];
 
 const neighborhoods = [
-  { name: "Brasada Ranch", location: "Powell Butte", image: "/images/hero-neighborhoods.jpg", link: "/brasada-ranch-builder" },
-  { name: "Tetherow", location: "Bend", image: "/images/qHKfAGVqL6Y8.jpg", link: "/tetherow-custom-homes" },
-  { name: "Pronghorn", location: "Bend", image: "/images/asoZsc8CLN0r.jpg", link: "/pronghorn-builder" },
-  { name: "Broken Top", location: "Bend", image: "/images/WkNH38aWPs08.jpg", link: "/broken-top-builder" },
-  { name: "Awbrey Butte", location: "Bend", image: "/images/LlxE9731ghDy.jpg", link: "/awbrey-butte-builder" },
-  { name: "Caldera Springs", location: "Sunriver", image: "/images/UCoE7gADVKD9.jpg", link: "/caldera-springs-builder" },
+  { name: "Brasada Ranch", location: "Powell Butte", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/mccartney-exterior_e5caf5be.webp", link: "/brasada-ranch-builder" },
+  { name: "Tetherow", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/reaco-chiaramonte-exterior_58703850.webp", link: "/tetherow-custom-homes" },
+  { name: "Pronghorn", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oneil-exterior_0d3f2739.webp", link: "/pronghorn-builder" },
+  { name: "Broken Top", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/vonschlegell-exterior_bea8cf63.webp", link: "/broken-top-builder" },
+  { name: "Awbrey Butte", location: "Bend", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/brown-kitchen_0babdbb6.webp", link: "/awbrey-butte-builder" },
+  { name: "Caldera Springs", location: "Sunriver", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/craft-exterior_2bccdeaf.webp", link: "/caldera-springs-builder" },
 ];
 
 const homeFaqs = [
@@ -107,7 +107,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-main.jpg')" }}
+          style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-main_2cc4c17d.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-timber/90 via-timber/70 to-transparent" />
         </div>
@@ -245,7 +245,7 @@ export default function Home() {
 
             <div className="relative">
               <img
-                src="https://cdn.manus.space/IMG_9490_427925df.jpeg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/kevin-rea_d8906d02.webp"
                 alt="Kevin Rea - Master Custom Home Builder"
                 className="rounded-lg shadow-2xl"
               />
@@ -279,7 +279,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <div className="md:col-span-2 lg:col-span-2 relative group overflow-hidden rounded-lg">
               <img
-                src="/images/hero-portfolio.jpg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/hero-portfolio_1a2f7d27.jpg"
                 alt="Luxury Custom Home Interior"
                 className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -297,7 +297,7 @@ export default function Home() {
 
             <div className="relative group overflow-hidden rounded-lg">
               <img
-                src="/images/oov3bdfkfk6B.jpg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663234433834/jH6DLQ8FrZGu3jgVut4Sqk/oov3bdfkfk6B_35418da9.jpg"
                 alt="Brasada Ranch Custom Home"
                 className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
               />

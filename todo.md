@@ -736,3 +736,12 @@
 - [ ] Activate email sequence automation in backend
 - [ ] Build local partnerships (real estate agents, designers, architects)
 - [ ] Monitor and track all marketing metrics (GBP actions, form submissions, leads)
+
+
+## Image Restoration (Apr 8, 2026)
+- [x] Restored all CDN image URLs to Home.tsx
+- [x] Hero background image restored (https://d2xsxph8kpxj0f.cloudfront.net/...)
+- [x] All neighborhood card images restored
+- [x] Kevin Rea portrait image restored
+- [x] Portfolio images restored
+- [x] All images now loading correctly on home page
