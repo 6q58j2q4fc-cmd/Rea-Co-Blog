@@ -745,3 +745,14 @@
 - [x] Kevin Rea portrait image restored
 - [x] Portfolio images restored
 - [x] All images now loading correctly on home page
+
+
+## Blog Page Reorganization (Apr 8, 2026)
+- [x] Create dedicated featured articles section on blog page (enhanced styling with gradient background)
+- [x] Sort articles by newest first (descending date order) - already implemented, verified working
+- [x] Implement featured article highlighting/styling (prominent cards with hover effects)
+- [x] Add "Latest Articles" section with newest posts first
+- [x] Add "Newest posts appear first" subtitle to Latest Articles
+- [x] Enhance featured cards with larger images, better shadows, and hover animations
+- [x] Add reading time to featured articles
+- [x] Add category badges to featured articles

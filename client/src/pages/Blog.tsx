@@ -118,47 +118,63 @@ export default function Blog() {
                 <>
                   {/* Featured Posts */}
                   {!selectedCategory && featuredArticles && featuredArticles.length > 0 && (
-                    <div className="mb-12">
-                      <h2 className="font-display text-2xl font-semibold text-timber mb-6">
-                        Featured Articles
-                      </h2>
+                    <div className="mb-16 p-8 bg-gradient-to-r from-amber/10 to-timber/10 rounded-lg border-2 border-amber/30">
+                      <div className="flex items-center gap-3 mb-8">
+                        <div className="w-1 h-8 bg-amber rounded-full" />
+                        <h2 className="font-display text-3xl font-semibold text-timber">
+                          Featured Articles
+                        </h2>
+                        <span className="ml-auto font-body text-sm bg-amber text-timber px-4 py-2 rounded-full font-medium">
+                          Most Popular
+                        </span>
+                      </div>
                       <div className="grid md:grid-cols-2 gap-6">
                         {featuredArticles.map((article) => (
                           <Link key={article.id} href={`/articles/${article.slug}`}>
-                            <Card className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-500 cursor-pointer h-full">
-                              <div className="relative h-48 overflow-hidden bg-stone">
+                            <Card className="group overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer h-full bg-white hover:-translate-y-1">
+                              <div className="relative h-56 overflow-hidden bg-stone">
                                 {article.featuredImage ? (
                                   <img
                                     src={article.featuredImage}
                                     alt={`${article.title} - ${article.category || 'Custom Home'} in Central Oregon by Kevin Rea, Bend Oregon luxury home builder`}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    loading="lazy"
                                   />
                                 ) : (
                                   <div className="absolute inset-0 bg-gradient-to-br from-timber/20 to-amber/20" />
                                 )}
-                                <div className="absolute top-4 left-4">
-                                  <span className="font-body text-xs bg-amber text-timber px-3 py-1 rounded-full font-medium">
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                                <div className="absolute top-4 left-4 right-4 flex items-start justify-between">
+                                  <span className="font-body text-xs bg-amber text-timber px-3 py-1 rounded-full font-bold uppercase tracking-wide">
                                     Featured
+                                  </span>
+                                  <span className="font-body text-xs bg-timber/80 text-white px-3 py-1 rounded-full font-medium">
+                                    {article.views} views
                                   </span>
                                 </div>
                               </div>
                               <CardContent className="p-6">
-                                <h3 className="font-display text-lg font-semibold text-timber mb-2 line-clamp-2 group-hover:text-amber transition-colors">
+                                {article.category && (
+                                  <span className="font-body text-xs bg-amber/20 text-amber px-2 py-1 rounded inline-block mb-3 font-medium">
+                                    {article.category}
+                                  </span>
+                                )}
+                                <h3 className="font-display text-xl font-bold text-timber mb-3 line-clamp-2 group-hover:text-amber transition-colors">
                                   {article.title}
                                 </h3>
-                                <p className="font-body text-muted-foreground text-sm mb-4 line-clamp-2">
+                                <p className="font-body text-muted-foreground text-sm mb-4 line-clamp-3">
                                   {article.excerpt}
                                 </p>
-                                <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                                <div className="flex items-center gap-4 text-xs text-muted-foreground pt-4 border-t border-stone">
                                   <span className="flex items-center gap-1">
                                     <Calendar className="w-3 h-3" />
                                     {article.publishedAt
-                                      ? new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'numeric', day: 'numeric' })
+                                      ? new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
                                       : "Draft"}
                                   </span>
                                   <span className="flex items-center gap-1">
-                                    <Eye className="w-3 h-3" />
-                                    {article.views} views
+                                    <Clock className="w-3 h-3" />
+                                    {formatReadingTime(calculateReadingTime(article.content || article.excerpt || ''))}
                                   </span>
                                 </div>
                               </CardContent>
@@ -171,10 +187,17 @@ export default function Blog() {
 
                   {/* All Posts */}
                   <div>
-                    <div className="flex items-center justify-between mb-6">
-                      <h2 className="font-display text-2xl font-semibold text-timber">
-                        {selectedCategory ? `Articles in "${selectedCategory}"` : "All Articles"}
-                      </h2>
+                    <div className="flex items-center justify-between mb-8">
+                      <div>
+                        <h2 className="font-display text-2xl font-semibold text-timber">
+                          {selectedCategory ? `Articles in "${selectedCategory}"` : "Latest Articles"}
+                        </h2>
+                        {!selectedCategory && (
+                          <p className="font-body text-sm text-muted-foreground mt-1">
+                            Newest posts appear first
+                          </p>
+                        )}
+                      </div>
                       {selectedCategory && (
                         <Button
                           variant="outline"
