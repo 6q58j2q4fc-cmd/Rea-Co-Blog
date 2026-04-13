@@ -1,0 +1,57 @@
+services:
+  # PostgreSQL Database
+  - type: pserv
+    name: reaco-leads-db
+    plan: starter
+    ipAllowList: []
+    postgresSQLVersion: "15"
+    databaseName: reaco_leads
+    user: postgres
+    region: oregon
+
+  # Web Service
+  - type: web
+    name: reaco-leads-web
+    plan: starter
+    runtime: node
+    buildCommand: pnpm install && pnpm build
+    startCommand: node dist/server/_core/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: reaco-leads-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: VITE_APP_URL
+        value: https://bendoregonluxuryhomebuilder.com
+      - key: VITE_API_URL
+        value: https://bendoregonluxuryhomebuilder.com/api
+    healthCheckPath: /api/health
+    region: oregon
+    domains:
+      - bendoregonluxuryhomebuilder.com
+      - www.bendoregonluxuryhomebuilder.com
+    headers:
+      - path: "/*"
+        name: "X-Frame-Options"
+        value: "SAMEORIGIN"
+      - path: "/*"
+        name: "X-Content-Type-Options"
+        value: "nosniff"
+      - path: "/*"
+        name: "X-XSS-Protection"
+        value: "1; mode=block"
+      - path: "/*"
+        name: "Referrer-Policy"
+        value: "strict-origin-when-cross-origin"
+      - path: "/*"
+        name: "Permissions-Policy"
+        value: "geolocation=(), microphone=(), camera=()"
+
+databases:
+  - name: reaco-leads-db
+    plan: starter
+    region: oregon

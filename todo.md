@@ -770,3 +770,29 @@
 - [x] Increase opacity of orange tagline text (added font-semibold and opacity-100)
 - [x] Change orange button text from dark timber to white for better readability
 - [x] Verify all text meets WCAG AA contrast standards (white on amber, orange on white)
+
+
+## Render Hosting Migration (Apr 8, 2026)
+- [ ] Replace Manus OAuth with email/password authentication
+- [ ] Update database schema for PostgreSQL compatibility
+- [ ] Configure AWS S3 storage integration
+- [ ] Create production data sync system (Manus ↔ Render)
+- [ ] Create `.env.example` with all required variables
+- [ ] Create `render.yaml` deployment configuration
+- [ ] Create `Procfile` for Render process management
+- [ ] Test all functionality locally before migration
+- [ ] Push code to GitHub repository
+- [ ] Verify GitHub and Render compatibility
+
+
+## Render Hosting Migration Preparation (Apr 13, 2026)
+- [x] Create `.env.example` file for environment variables
+- [x] Create `render.yaml` deployment configuration
+- [x] Create `Procfile` for Render process management
+- [x] Create `RENDER_MIGRATION_GUIDE.md` with 6-phase migration plan
+- [x] Create `GITHUB_RENDER_SETUP.md` with GitHub export and Render setup instructions
+- [x] Verify all 43 tests passing (no TypeScript errors after cleanup)
+- [ ] Push to GitHub repository (ready when user confirms)
+- [ ] Configure Render deployment (future - when ready to migrate)
+
+**Decision:** Keep Manus hosting for production (stable, feature-complete). Export code to GitHub for version control. Render migration available as future option when needed.
